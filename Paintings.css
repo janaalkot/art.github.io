@@ -1,0 +1,130 @@
+    :root{
+      --bg: rgb(87, 63, 41);
+      --text: #d5c5c8;
+      --btn: #827081;
+      --table: #D2C2B0;
+    }
+
+    body {
+      background-color: var(--bg);
+      font-family: "Trebruchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    h1 {
+      color: var(--bg);
+      background-image: url('HeaderBG.jpeg');
+      font-size: 60px;
+      text-decoration: underline;
+      height: 100px;
+    }
+
+    button {
+      font-family: "Trebruchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+      font-weight: 700;
+      font-size: 20px; 
+      padding: 10px;
+      background-color: var(--btn);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    img:hover {
+      box-shadow: 10px 10px 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      font-size: 20px; 
+      letter-spacing: -1px; 
+      background-color: var(--text);
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .small {
+      display: none;
+      background-color: var(--text);
+      margin: 0px 0px 10px 0px;
+    }
+
+    .one {
+      height: 700px;
+      display: flex;
+      flex: 0 0 49.5%;
+      margin: 0 0 10px 0;
+    }
+
+    .four {
+      height: 500px;
+      display: flex;
+      position: relative;
+      flex: 0 0 99.9%;
+    }
+
+    iframe {
+      position: fixed;
+      left: 0px;
+      bottom: 0px; 
+      height: 50px;
+      width: 100%;
+    }
+
+    .five {
+      height: 500px;
+      display: flex;
+      flex: 0 0 32.9%;
+      justify-content: space-between;
+      margin: 0 0 10px 0;
+    }
+    /*table heading*/
+    h2 {
+      font-size: 30px;
+      text-decoration: underline;
+      height: 100px;
+    }
+
+    th, td, table {
+      border: 2px solid black;
+      border-collapse: collapse;
+      font-size: larger;
+    }
+    table {
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--table);
+    }
+    
+    tr {
+        padding: 8px;
+    }
+
+    /* unvisited link */
+    a:link {
+      color: rgb(76, 12, 179);
+    }
+
+/* visited link */
+    a:visited {
+      color: rgb(86, 180, 243);
+    }
+
+/* mouse over link */
+    a:hover {
+      color: rgb(86, 96, 243);
+    }
+
+/* selected link */
+    a:active {
+      color: rgb(141, 86, 243);
+    }
