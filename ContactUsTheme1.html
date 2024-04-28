@@ -257,6 +257,186 @@ z-index: 100;
 .products li a:hover:not(.header) {
     background-color: var(--grey); 
 }
+.footer
+{
+    background-color: var(--blue);
+    padding: 70px 0;
+}
+.footer-container
+{
+    max-width: 1170px;
+    background-color: var(--blue);
+    margin: auto;
+}
+ul
+{
+    list-style: none;
+}
+.footer-col
+{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col h4
+{
+    font-size: 18px;
+    color: var(--white);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500px;
+    position: relative;
+}
+.footer-col h4 ::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--white);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+.footer-col ul li a
+{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover/*moving transition*/
+{
+    color: var(--grey);
+    padding-left: 10px;
+}
+.footer-col .social-links a/*original */
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--darkgrey);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--white);
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover/*after effect*/
+{
+    color: var(--darkgrey);
+    background-color: var(--white);
+}
+.feedbackcontainer {
+    width: 500px;
+    background: var(--darkgrey);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    border-radius: 20%;
+    margin-left: 400px;
+    margin-bottom: 8%;
+    
+}
+
+.feedbackcontainer form {
+    width: 100%;
+    text-align: center;
+    padding: 25px 20px;
+    margin: bottom 10px; 
+}
+
+.feedbackcontainer form h1 {
+    padding: 10px 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.feedbackcontainer form .userfeedback {
+    position: relative;
+}
+
+.feedbackcontainer form .userfeedback i {
+    position: absolute;
+    font: 20px;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    
+}
+
+.feedbackcontainer form input {
+    width: 50%;
+    height: 50px;
+    margin: 4px 0;
+    border:  1px solid var(--white);
+    border-radius: 3px;
+    background: var(--white);
+    padding: 0 15px;
+    padding-right: 45px;
+    font-size: 20px;
+    z-index: 50;
+}
+
+.feedbackcontainer form textarea {
+    padding: 5px 15px;
+    border:  1px solid var(--darkgrey);
+    border-radius: 3px;
+    background: var(--white);
+    padding: 0 15px;
+    font-size: 20px;
+    width: 70%;
+}
+
+.feedbackcontainer form button {
+    margin-top: 5px;
+    border: none;
+    background: var(--white);
+    color: #000;
+    padding: 10px 0;
+    width: 60%;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 10%;
+}
+#feedback
+{
+    background-color: var(--white);
+}
+.products {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hide the products block by default */
+}
+
+
+.products li a {
+    border: 1px solid ; 
+    margin-top: -1px; 
+    background-color: var(--white);
+    padding: 12px; 
+    text-decoration: none; 
+    font-size: 15px; 
+    color: var(--darkgrey); 
+    display: block; 
+}
+
+.products li a:hover:not(.header) {
+    background-color: var(--grey); 
+}
   </style>
 </head>
 <body>
@@ -374,6 +554,36 @@ z-index: 100;
   <div style="display: flex; justify-content: baseline; margin-top: 100px; position: relative; right: -250px;"><i class="material-icons grey" style="font-size: 50px; margin-right: 20px;">email</i><input type=" text" placeholder=" write your email here" style="width: 50%;"></div>
   <div style="display: flex; justify-content: baseline; margin-top: 100px;"><i class=" material-icons grey" style="font-size: 50px; margin-right: 20px;">person</i><input type=" text" placeholder=" write your feedback here" style="width: 100%;"></div>
 </div>
+<footer class="footer"><!--footer-->
+  <div class="footer-container">
+      <div class="footer-row">
+          <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Our service</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Get Help</h4>
+              <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Returns</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Follow us</h4>
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#"><i class="fab fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-brands fa-tiktok"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
   <script src="main.js"></script>
 </body>
 </html>
