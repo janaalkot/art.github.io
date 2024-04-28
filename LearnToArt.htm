@@ -4,7 +4,190 @@
 <title>Art.h|Learn to Art</title>   
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="vids.css">
+ <link rel="stylesheet" href="vi<!DOCTYPE html>
+<html>
+<head>
+<title>Art.h|Learn to Art</title>   
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="vidsTheme1.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- navigation bar for both pages and sections in this page -->
+<ul id="navbar">
+ <li> <nav class="nav_">
+  <div class="navTop">
+      <div class="navItem"><!--menu-->
+          <label for="nav-toggle">
+              <input type="checkbox" id="nav-toggle">
+              <div class="toggle">
+                  <span class="top_line common"></span>
+                  <span class="middel_line common"></span>
+                  <span class="bottom_line common"></span>
+              </div>
+              <div class="layers">
+                  <h1>Menu</h1>
+                  <ul><!--here to link the pages-->
+                      <li><a href="index.html"><i class="fas fa-solid fa-house"></i>Main</a></li>
+                      <li><a href=""><i class="fas fa-solid fa-monument"></i>Statues</a></li>
+                      <li><a href=""><i class="fas fa-solid fa-vihara"></i>Architecture </a></li>
+                      <li><a href=""><i class="fas fa-solid fa-photo-film"></i>Media</a></li>
+                      <li><a href=""><i class="fas fa-solid fa-landmark"></i>Museums</a></li>
+                      <li><a href=""><i class="fas fa-solid fa-headphones"></i> listen to</a></li>
+                      <li><a href=""><i class="fas fa-regular fa-calendar-days"></i>Events</a></li>
+                      <li><a href=""><i class="fas fa-brands fa-leanpub"></i>learn to ART</a></li>
+                      <li><a href="ArtGallery.htm"><i class="fas fa-solid fa-palette"></i>Paintings</a></li>
+                      <li><a href=""><i class="fas fa-solid fa-cart-arrow-down"></i>in sell</a></li>
+                      <li><a href=""><i class="fas fa-solid fa-gem"></i>Jewellery</a></li>
+                      <li><a href=""><i class="fas fa-solid fa-address-book"></i>Contact us</a></li>
+                  </ul>
+              </div>
+          </label>
+      </div>
+      <div class="navItem"><!--logo-->
+          <a href="index.html"><img src="img/logo.png" width ="150" height="100" alt="logo" ></a>
+      </div>
+      <script src="search.js"></script>
+          
+          <div class="navItem"><!--search bar-->
+              <div class="find">
+              <input type="text" placeholder="search..." class="searchInput" onkeyup="onKeyUp()">
+              <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
+              </div>
+          </div>
+      <div class="navItem"><!--log button-->
+          <a href="log.html"><button class="log" onclick="openLog()">LOG IN</button></a>
+          <button id="themeSwitcher">Switch Theme</button>
+
+      </div>
+  </div>
+  <ul class="products"><!--WE NEED TO ADD MOST OF PRODUCTS NAME HERE-->
+    <li><a href="#">ARCHITECTURE</a></li>
+    <li><a href="#">MUSEUMS</a></li>
+    <li><a href="#">JEWELLERY</a></li>
+    <li><a href="#">PANELS</a></li>
+    <li><a href="#">IN SELL</a></li>
+    <li><a href="#">STARE NIGHT</a></li>
+    <li><a href="#">MONALISA</a></li>
+</ul>
+</nav></li>   
+ <li class="sec" onclick="sectionsDisplayAndHide()">
+   Sections<span style="position: relative; top: 7px;" class="glyphicon" id="triangle">&#xe250;</span>
+   <ul id="dropdownlist">
+    <li><a href="#i">Anatomy Section</a></li>
+    <li><a href="#ii">Painting Tools Section</a></li>
+    <li><a href="#iii">Painting Techniques Section</a></li>
+    <li><a href="#iiii">Sculpting Section</a></li>
+   </ul>
+ </li> 
+</ul>   
+ <h1 id="titleOfPG">Learn to Art</h1>
+ <!-- first section heading-->
+ <h2 id="i">Anatomy</h2>
+ <div class="PM">
+  <button class="left" onclick="topthreeVidsPrev()"><span class="glyphicon glyphicon-arrow-left" style="align-self: center; font-size: 40px;"></span></button>
+  <iframe class="topthree" src="https://www.youtube.com/embed/Lw0nZEw8IIk?list=PLCwZSmCOiyhb0_b7TBAmQZ6oq6c8ZV_D8" title="How to draw basic anatomy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="topthree" src="https://www.youtube.com/embed/eAhHgPZASYQ" title="How to draw Hands / Useful Tips!! / Tutorials (Easy way) / (Part 1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="topthree" src="https://www.youtube.com/embed/feHJIq2bTGE" title="How to Draw Arms Step by Step - Narrated Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+  <iframe class="topthree" src="https://www.youtube.com/embed/hf9THaviPvM" title="How to draw Feet / Useful tips &amp; Tutorial !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+  <iframe class="topthree" src="https://www.youtube.com/embed/9zNiKiVKuPc" title="How To Draw Legs | Easy Anatomy and Gesture" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+  <iframe class="topthree" src="https://www.youtube.com/embed/Q_dpP6MyWQA" title="HOW TO DRAW EYES | All styles | Drawlikeasir" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="topthree" src="https://www.youtube.com/embed/DmHzGjz75C8" title="How to draw noses (for beginners)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="topthree" src="https://www.youtube.com/embed/h06wB5JlyNg" title="HOW TO DRAW: LIPS | Basic Steps (ENG Subtitles)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="topthree" src="https://www.youtube.com/embed/Yqgw_iMWwlw" title="How to Draw Ears - Anatomy and Structure" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="topthree" src="https://www.youtube.com/embed/WnsE4TRu_Gw" title="Basic Technique  for Hair Drawing ?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="topthree" src="https://www.youtube.com/embed/5VCiTcOYado" title="How I Practice Drawing FACES (Beginner Friendly)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="topthree" src="https://www.youtube.com/embed/Wvb8oJnvmsc" title="How To Draw Different Head Shapes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <button class="right" onclick="topthreeVidsNext()"><span class="glyphicon glyphicon-arrow-right" style="align-self: center; font-size: 40px;"></span></button>
+ </div>
+ <!--heading of second section-->
+ <h2 id="ii">Painting Tools</h2>
+ <div class="PS">
+  <div>
+   <iframe class="topone" src="https://www.youtube.com/embed/2P3dAsa2qvQ" title="Essential ACRYLIC PAINTING Materials for Beginners!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="topone" src="https://www.youtube.com/embed/wKKTynphQso" title="Oil Painting for Beginners | Supply List" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="topone" src="https://www.youtube.com/embed/Vpar-ZWAgWY" title="Watercolor Supplies For Beginners | What You Need To Get Started!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
+  <div class="PT">
+   <iframe class="topfour" src="https://www.youtube.com/embed/cSvIm0vTnK8" title="Acrylic Painting TIPS for Beginners - How to GET STARTED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="topfour" src="https://www.youtube.com/embed/k1v18PL6fho" title="5 tips you should always do when using acrylic paint,Clive5art" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="topfour" src="https://www.youtube.com/embed/GSexEZnXtEQ" title="10 Simple Acrylic Painting Tips | Do&#39;s &amp; Dont&#39;s, Be a Better Painter" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="topfour" src="https://www.youtube.com/embed/NSM8b8goLdo" title="TOP 10 ACRYLIC PAINTING TIPS FOR BEGINNERS!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="topfour" src="https://www.youtube.com/embed/2QP8uJCSD2g" title="My 10 Best Oil Painting TIPS To Instantly Improve Your Paintings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+   <iframe class="topfour" src="https://www.youtube.com/embed/q6Fh07zQ2KU" title="10 Basic Oil Painting Tips You Should Know" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="topfour" src="https://www.youtube.com/embed/U-J-wBQHgG4" title="Mastering Wet into Wet Oil Painting 7 Essential Tips for Layering Paint" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="topfour" src="https://www.youtube.com/embed/BtO3M_mEygw" title="PAINT TALK: Oil Painting Mediums Simplified" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="topfour" src="https://www.youtube.com/embed/gdOyVVTlBK4" title="10 Quick Watercolor Tips That Will Help Your Paintings Today" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="topfour" src="https://www.youtube.com/embed/UuBdMJor-Bk" title="7 WATERCOLOR TIPS (For Beginners!)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="topfour" src="https://www.youtube.com/embed/nkuGh8QwxuI" title="Learn Watercolor Fast (3 Ways to Speed Up Your Learning)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="topfour" src="https://www.youtube.com/embed/eEXfQKabQGI" title="HOW TO USE WATERCOLOR - Guide for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+ </div>
+ <div class="buttons">
+  <button class="back" onclick="topfiveVidsPrev()"><span class="glyphicon glyphicon-arrow-left" style="align-self: center; font-size: 70px;"></span></button>
+  <button class="forward" onclick="topfiveVidsNext()"><span class="glyphicon glyphicon-arrow-right" style="align-self: center; font-size: 70px;"></span></button>
+ </div>
+ <!--iframes-->
+<div id="ad">
+ <iframe id="advert1" src="https://art-torg.com/current-auction?gad_source=1&gclid=CjwKCAjwrIixBhBbEiwACEqDJYbpopPxZXVINjEXXM4rKDQqCVtyMkuTPu5BY-QNK-m-QC2AYRoMyBoC2vkQAvD_BwE"></iframe>
+ <iframe id="advert2" src="https://www.sothebys.com/en/"></iframe>
+</div>
+<!--heading of third section-->
+ <h2 id="iii">Painting Techniques</h2>
+ <div class="PS">
+  <div>
+   <iframe class="bottomone" src="https://www.youtube.com/embed/TFLpCwMxnnc" title="Acrylic Painting Techniques (9 Easy Tricks)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomone" src="https://www.youtube.com/embed/7nnR69HiSTU" title="5 AWESOME Oil Painting Techniques to INSTANTLY Make Your Paintings that STAND OUT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomone" src="https://www.youtube.com/embed/C8iKj4pfqAA" title="The ultimate WATERCOLOUR TUTORIAL | For beginners | Drawlikeasir" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomone" src="https://www.youtube.com/embed/QUK9gOobY_Y" title="10 tips for painters switching from ACRYLIC to OIL paint" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="PT">
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/6sEhgEdpfL0" title="10 Acrylic Painting Techniques for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/zn3pCipJdks" title="LET&#39;S PRACTICE: ACRYLIC PAINTING! (so we can improve and get better and not suck)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/cDzcoyeaRKI" title="Acrylic Painting Techniques" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/jNvwnY_sh0Q" title="The Beginners Series / Lesson 3 /  Acrylic Painting Techniques That Beginners Should Try" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/0H9OiRWAMMw" title="This Oil Painting Technique is a GAME CHANGER!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/Zv_OkJfgheM" title="Top 5 Oil PAINTING Techniques Every Beginner Should Know" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/wVZ5zrGayXI" title="How to Oil Paint Wet on Wet Without Making a MESS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/m2kU8JXL0JU" title="This UNDERRATED Oil Painting Technique Might Transform Your Colors - Oil Painting Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/9YIpRMwJJfs" title="12 WATERCOLOR TECHNIQUES FOR BEGINNERS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/GCx-DOdvcwA" title="6 MOST Important Watercolor Techniques to Master" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/G5ltIgaytLM" title="Watercolor Painting Techniques Do&#39;s &amp; Don&#39;ts for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/vCzvnsl0IEk" title="Watercolor Leaves: Every Technique You&#39;ll Ever Need!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/DSeA1xEaV6I" title="The PAINTING Exercise That Will HELP You the MOST" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/MGWcIwHR2I8" title="Oil Painting How to Match Any Color" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/AHWKr9l_Mrw" title="What Is The Difference Between Watercolor, Gouache &amp; Acrylic Paint" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe class="bottomfour" src="https://www.youtube.com/embed/tw2KzPpBrww" title="The Types of Paint Oil Acrylic Watercolor the Pros and Cons" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+ </div>
+ <div class="buttons">
+  <button class="back" onclick="bottomfiveVidsPrev()"><span class="glyphicon glyphicon-arrow-left" style="align-self: center; font-size: 70px;"></span></button>
+  <button class="forward" onclick="bottomfiveVidsNext()"><span class="glyphicon glyphicon-arrow-right" style="align-self: center; font-size: 70px;"></span></button>
+ </div>
+ <!--heading of fourth section-->
+ <h2 id="iiii">Sculpting</h2>
+ <div class="PM">
+  <button class="left" onclick="bottomthreeVidsPrev()"><span class="glyphicon glyphicon-arrow-left" style="align-self: center; font-size: 40px;"></span></button>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/xmgt8Is95wk" title="Types of Clay - Pros and Cons (ceramic, plastalina, polymer)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/1WyT5gbpPiw" title="AIR DRY Clay TIPS: Sculpting For Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/knct_Tk5tfk" title="Sculpting a Dragon ball character with polymer clay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/AFKnG-vENUw" title="Learn Sculpting - Lesson 1 - Clay Modeling" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/1n7apcgQiz0" title="Beginner Sculpture Basics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/VTXkHa4FKiU" title="How to Sculpt a Hand" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/roncdiUDn_E" title="How to Sculpt a Foot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/6dnyYu4Ff7U" title="Sculpting a head in clay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/tnfh7cydAkA" title="⭐️ Polymer Clay 101 for Beginners ⭐️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/9UoeyZ5G2VQ" title="Learn Sculpting - Lesson 3, Part 1: Sculpt a Baby Elephant" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/d8Km0HXziKY" title="Clay bird making  | sculpting clay for beginners | Terracotta clay bird by craftzone4u" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/8mp_eIlO56c" title="How to Sculpt a Humpback Whale out of Polymer Clay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/zAK_R9FuiQM" title="Create an Epic Clay Planter Without Breaking the Bank! DIY Clay Plant Pot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/FTP9vudu2oM" title="How to Make a STUNNING Tree - The Easy Way" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="bottomthree" src="https://www.youtube.com/embed/htPnztqKG_U" title="The BEST Painting Techniques for Polymer Clay Sculptures! + How to Paint Eyes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <button class="right" onclick="bottomthreeVidsNext()"><span class="glyphicon glyphicon-arrow-right" style="align-self: center; font-size: 40px;"></span></button>
+ </div>
+ <script src="DisplayAndSwitch.js"></script>
+</body>
+</html>ds.css">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
