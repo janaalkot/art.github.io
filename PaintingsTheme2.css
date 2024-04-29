@@ -8,6 +8,11 @@
       --hover: rgb(86, 96, 243);
       --active: rgb(141, 86, 243);
       --dark: #141619;
+      --grey :#d7d8e6;
+      --blue :rgb(40,53,118);
+      --darkblue :rgb(40,53,118);
+      --darkgrey :#141619;
+      --white : #F5F5F5;
     }
 
     body {
@@ -136,15 +141,7 @@
     a:active {
       color: var(--active);
     }
-:root
-{
-    --grey :#d7d8e6;
-    --blue :rgb(40,53,118);
-    --darkblue :rgb(40,53,118);
-    --darkgrey :#141619;
-    --white : #F5F5F5;
 
-}
 nav/*top bar*/
 {
 background-color: var(--darkblue);
