@@ -171,7 +171,7 @@
         </form>
     </div>
     <script>
-        // Function to save form data to local storage
+       // Function to save form data to local storage
         function saveFormData() {
             let formDataArray = JSON.parse(localStorage.getItem('formData'));
             if (!Array.isArray(formDataArray)) {
@@ -181,10 +181,10 @@
                 name: document.getElementById('name').value,
                 number: document.getElementById('number').value,
                 address: document.getElementById('address').value
-
             };
             formDataArray.push(formData);
             localStorage.setItem('formData', JSON.stringify(formDataArray));
+            showMessage('Form Data Is Being Saved !');
         }
 
         // Function to load form data from local storage
@@ -195,21 +195,39 @@
                 document.getElementById('name').value = lastFormData.name;
                 document.getElementById('number').value = lastFormData.number;
                 document.getElementById('address').value = lastFormData.address;
-
             }
+        }
+
+        // Function to show message with close button
+        function showMessage(message) {
+            const messageElement = document.getElementById('message');
+            messageElement.textContent = message;
+            messageElement.style.display = 'block'; // Show the message
+
+            // Create close button
+            const closeButton = document.createElement('button');
+            closeButton.textContent = 'x';
+            closeButton.className = 'closeButton'; // Add class for styling
+            closeButton.onclick = function () {
+                messageElement.textContent = '';
+                messageElement.style.display = 'none'; // Hide the message
+            };
+
+            // Append close button to message
+            messageElement.appendChild(closeButton);
         }
 
         // Load form data when the page loads
         window.onload = loadFormData;
 
-        // Save form data when the form is submitted
+        // Save form data and show message when the form is submitted
         document.getElementById('myForm').addEventListener('submit', function (event) {
             event.preventDefault();
             saveFormData();
-            alert('Form data is being saved !!');
             // Reset form after submission
             document.getElementById('myForm').reset();
         });
+
     </script>
 </body>
 
