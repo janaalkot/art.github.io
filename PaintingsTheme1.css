@@ -8,6 +8,11 @@
       --hover: rgb(228, 243, 142);
       --active: rgb(243, 206, 86);
       --dark: #18140e;
+      --grey :#c7ad96;
+        --blue :#3b332b;
+        --darkblue :#3b332b;
+        --darkgrey :#7a5e41;
+        --white : #F5F5F5;
     }
 
     body {
@@ -135,15 +140,6 @@
 /* selected link */
     a:active {
       color: var(--active);
-    }
-    :root
-    {
-        --grey :#d7d8e6;
-        --blue :rgb(40,53,118);
-        --darkblue :rgb(40,53,118);
-        --darkgrey :#141619;
-        --white : #F5F5F5;
-    
     }
     nav/*top bar*/
     {
