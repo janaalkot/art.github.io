@@ -3,11 +3,11 @@
     --shadow: #18140e;
     --btn: #ede6df;
     --list: #d5c5c8;
-    --grey :#d7d8e6;
-    --blue :rgb(40,53,118);
-    --darkblue :rgb(40,53,118);
-    --darkgrey :#141619;
-    --white : #F5F5F5;
+    --grey :#c7ad96;
+        --blue :#3b332b;
+        --darkblue :#3b332b;
+        --darkgrey :#7a5e41;
+        --white : #F5F5F5;
 }
 
 * {
