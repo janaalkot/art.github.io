@@ -192,3 +192,25 @@ body {
     font-size: 20px;
     margin-top: -30px;
 }
+#message {
+    display: none;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* White with transparency */
+    padding: 10px;
+    border-radius: 5px;
+    color: green;
+    /* White text */
+}
+
+.closeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: red;
+    /* White close button */
+    font-size: 16px;
+    cursor: pointer;
+}
