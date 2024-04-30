@@ -97,6 +97,7 @@ h2{
         display: block;
         text-transform: capitalize;
         transition: all 0.3s ease;
+        font-size: 12px;
         
     }
     .layers ul li a:hover
