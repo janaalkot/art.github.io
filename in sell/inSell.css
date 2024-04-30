@@ -470,7 +470,7 @@ header {
     border-radius: 20px;
     position: absolute;
     top: 200px;
-    right: 0;
+    left: 80%;
     /* Place iframe on the very right */
     width: 300px;
     height: 96%;
