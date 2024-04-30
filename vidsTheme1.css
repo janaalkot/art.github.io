@@ -1,0 +1,529 @@
+:root {
+    --bg:  #a5855f;
+    --shadow: #18140e;
+    --btn: #ede6df;
+    --list: #d5c5c8;
+    --grey :#c7ad96;
+        --blue :#3b332b;
+        --darkblue :#3b332b;
+        --darkgrey :#7a5e41;
+        --white : #F5F5F5;
+}
+
+* {
+ background-color: var(--bg);
+ font-family: "Trebruchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+ font-weight: 700;
+}
+/*for the navigation bar as a whole*/
+ul#navbar{
+    padding: 0;
+    background-color: var(--darkblue);
+    margin-bottom: -20px;
+}
+/*for the menu that switches between pages and the sections that switches between sections*/
+ul#navbar li{
+    color: var(--white);
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    top: 0;  
+    background: transparent; 
+    font-size: 30px;
+    margin: 0 0 0 40px;
+}
+/*for the list of sections that contains a bookmark for each section*/
+ul#dropdownlist{
+ background-color: var(--darkblue);   
+ display: none;
+ position: absolute;
+ text-align: center;
+ width: 200%;
+ padding: 0px;
+}
+/*for each item in the sections list*/
+ul#dropdownlist li{
+ display: block;
+ border-bottom: 2px solid var(--bg);
+ position: relative;
+ margin-left: 0px;
+}
+/*for the name of each section that's basically a link*/
+ul#dropdownlist li a{
+ font-size: 20px;
+ background-color: var(--darkblue);
+ text-decoration: none;
+ color: var(--white);
+}
+/*when hovering over all items in that nav bar*/
+li:hover{
+ background-color: aliceblue;
+ cursor: pointer;   
+}
+/*for the heading of each section*/
+#i, #ii, #iii, #iiii{ 
+ border-bottom: 2px solid var(--white);
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-size: 700;
+ font-weight: 700;
+}
+/*for the main heading / titel of the page*/
+#titleOfPG{
+ -webkit-text-fill-color: var(--shadow);
+ text-align: center;
+ border-top: 30px solid var(--bg);
+ text-decoration: underline var(--shadow);
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-size: 700;
+ font-weight: 900;
+}
+/*the div for the first and last sections*/
+.PM{
+ margin-top: -10px;
+ margin-bottom: -20px; 
+ border-top: 10px solid var(--bg);  
+ display: flex;
+ justify-content: space-between;
+ height: 390px;
+ width: 100%;
+}
+/*the div for the second and third sections*/
+.PS{
+ margin-top: -10px;
+ border-top: 10px solid var(--bg);  
+ display: flex;
+ justify-content: space-between;
+ height: 400px;
+ width: 100%;
+}
+/*for displaying the vids in the first and last sections*/
+.topthree, .bottomthree{
+ display: none;
+ height: 320px;
+ width: 400px;
+ box-shadow: 0px 25px 10px var(--shadow);
+ margin: 0px 4px 0px 4px;
+}
+/*for displaying the four vids on top of eachother*/
+.PT{
+ display: flex;
+ grid-template-columns: auto auto auto;
+ gap: 20px;
+ flex-wrap: wrap;
+ height: 390px;
+ width: 49.5%;
+}
+/*the display for the single vid on the left for the second and third sections*/
+.topone, .bottomone{
+ display: none;   
+ height: 400px;
+ width: 640px;
+ box-shadow: 0px 25px 10px var(--shadow);
+}
+/*the display for the four vids on the right for the second and third sections*/
+.topfour, .bottomfour{
+ display: none;
+ width: 310px;
+ height: 190px;
+ box-shadow: 0px 25px 10px var(--shadow);
+}
+/*the big div that contains both iframes*/
+#ad{
+ display: flex;
+ justify-content: space-between;
+ height: 400px;
+ width: 100%;
+ border-bottom: 420px solid var(--bg);
+ border-top: 20px solid var(--bg);
+ margin-bottom: -20px;
+}
+/*the iframe on the left*/
+#advert1{
+ position: absolute;
+ left: 200px;
+ height: 400px;
+ width: 300px;
+}
+/*the iframe on the right*/
+#advert2{
+ position: absolute;
+ right: 200px;
+ width: 300px;
+ height: 400px;
+}
+/*the buttons in the first and last sections*/
+.left, .right{
+ display: flex;  
+ background-color: var(--btn);
+ width: 50px;
+ height: 320px;
+ box-shadow: 0px 25px 10px var(--shadow);
+ border-radius: 2px;
+ border: none;
+}
+
+.left:hover, .right:hover{
+ cursor: pointer;
+ box-shadow: none;
+}
+/*the div that contains the buttons in the second and third sections*/
+.buttons{
+ display: flex;
+ justify-content: center;
+ border-top: 50px solid var(--bg);
+ margin-bottom: -20px;
+ height: 200px;
+ margin-top: -20px;
+}
+/*the buttons in the second and third sections*/
+.back, .forward{    
+ background-color: var(--btn);
+ width: 100px;
+ height: 100px;
+ margin: 0px 6px 0px 0px;
+ box-shadow: 10px 25px 10px var(--shadow);
+ border-radius: 4px;
+ border: none;
+}
+
+.back:hover, .forward:hover{
+ box-shadow: none;  
+ cursor: pointer;
+}
+/*the icons in the buttons*/
+.glyphicon-arrow-left, .glyphicon-arrow-right {
+ font-size: 50px;
+ align-self: center;
+}
+/*the span for the icons*/
+span{
+ align-self: center;
+ background: transparent;   
+}
+
+#i{
+    margin-top: -10px;
+    border-top: 50px solid var(--bg);
+}
+
+nav/*top bar*/
+{
+background-color: var(--darkblue);
+color: var(--white);
+padding: 20px 40px;
+position: fixed;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.navTop
+{
+    background-color: var(--darkblue);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.layers
+{
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    background-color: var(--darkblue);
+    transition: 0.5s ease;
+    transform: translateX(-150%);
+    padding-bottom: 550px; /* Added to create the illusion of 100% height */
+}
+.layers h1
+{
+    font-size: 35px;
+    background-color: var(--darkblue);
+    color: var(--white);
+    font-weight: 800;
+    text-align: right;
+    padding: 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+.layers ul
+{
+color: var(--white);
+background-color: var(--darkblue);
+}
+.layers ul li
+{
+    list-style: none;
+}
+.layers ul li a
+{
+    color: var(--white);
+    text-decoration: none;
+    padding: 0;
+    display: block;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    font-size: 28px;
+    
+}
+.layers ul li a:hover
+{
+    background-color: var(--grey);
+    color: var(--blue);
+}
+.layers ul li a i
+{
+    background-color: transparent;
+    width: 40px;
+    text-align: center;
+}
+
+.navItem {
+    background-color: var(--darkblue);
+    position: relative;
+}
+
+
+.toggle {
+    background-color: var(--darkblue);
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background-color: var(--white);
+    cursor: pointer;
+    border-radius: 2px;
+    top: 2px;
+    left: 15px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: var(--darkblue);
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--darkblue);
+}
+
+.toggle .middel_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--darkblue);
+}
+
+.toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--darkblue);
+}
+
+.navItem input[type="checkbox"] {
+    display: none;
+}
+.navItem input:checked ~ .toggle .top_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+.navItem input:checked ~ .toggle .bottom_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+.navItem input:checked ~ .toggle .middel_line {
+    opacity: 0;
+    transform: translateX(20px)
+}
+
+.navItem input:checked ~ .layers {
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.find/*search bar*/
+{
+    display: flex;
+    align-items: center;
+    background-color: var(--grey);
+    padding: 7px 20px;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+.searchInput
+{
+    border: none;
+    color: var(--darkblue);
+    background-color: var(--white);
+}
+.navItem button /*log in button*/
+{
+    font-size: 20px;
+    border-bottom: 2px solid  var(--white);
+    cursor: pointer;
+    background-color:transparent;
+    color: var(--white);
+    border-radius: 10%;
+}
+.navBottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.products {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hide the products block by default */
+}
+
+
+.products li a {
+    border: 1px solid ; 
+    margin-top: -1px; 
+    background-color: var(--white);
+    padding: 12px; 
+    text-decoration: none; 
+    font-size: 15px; 
+    color: var(--darkgrey); 
+    display: block; 
+}
+
+.products li a:hover:not(.header) {
+    background-color: var(--grey); 
+}
+.footer
+{
+    background-color: var(--blue);
+    padding: 70px 0;
+}
+.footer-container
+{
+    max-width: 1170px;
+    background-color: var(--blue);
+    margin: auto;
+}
+ul
+{
+    list-style: none;
+    background-color: var(--darkblue);
+}
+.footer-col
+{
+    background-color: var(--darkblue);
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-row
+{
+    background-color: var(--darkblue);
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col h4
+{
+    background-color: var(--darkblue);
+    font-size: 18px;
+    color: var(--white);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500px;
+    position: relative;
+}
+.footer-col h4 ::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--white);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+.footer-col ul li a
+{
+    background-color: var(--darkblue);
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover/*moving transition*/
+{
+    color: var(--grey);
+    padding-left: 10px;
+}
+.footer-col .social-links{
+    background-color: var(--darkblue);
+}
+.footer-col .social-links a/*original */
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--darkgrey);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--white);
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover/*after effect*/
+{
+    color: var(--darkgrey);
+    background-color: var(--white);
+}
+.products {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hide the products block by default */
+}
+
+
+.products li a {
+    border: 1px solid ; 
+    margin-top: -1px; 
+    background-color: var(--white);
+    padding: 12px; 
+    text-decoration: none; 
+    font-size: 15px; 
+    color: var(--darkgrey); 
+    display: block; 
+}
+
+.products li a:hover:not(.header) {
+    background-color: var(--grey); 
+}
+
+.fab {
+    background-color: transparent;
+}
+
+.fas {
+    float: left;
+    background-color: transparent;
+}

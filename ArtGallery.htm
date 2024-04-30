@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html> 
+<head>
+   <title>Art.h|Art Gallery</title>  
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+   <link rel="stylesheet" href="PaintingsTheme1.css">
+</head>
+<body>
+     <nav class="nav_">
+          <div class="navTop">
+              <div class="navItem"><!--menu-->
+                  <label for="nav-toggle">
+                      <input type="checkbox" id="nav-toggle">
+                      <div class="toggle">
+                          <span class="top_line common"></span>
+                          <span class="middel_line common"></span>
+                          <span class="bottom_line common"></span>
+                      </div>
+                      <div class="layers">
+                          <h1>Menu</h1>
+                          <ul><!--here to link the pages-->
+                              <li><a href="index.html"><i class="fas fa-solid fa-house"></i>Main</a></li>
+                              <li><a href="amira.html"><i class="fas fa-solid fa-monument"></i>Statues</a></li>
+                              <li><a href="architecture.html"><i class="fas fa-solid fa-vihara"></i>Architecture </a></li>
+                              <li><a href=""><i class="fas fa-solid fa-photo-film"></i>Media</a></li>
+                              <li><a href="museum.html"><i class="fas fa-solid fa-landmark"></i>Museums</a></li>
+                              <li><a href=""><i class="fas fa-solid fa-headphones"></i> listen to</a></li>
+                              <li><a href="team.html"><i class="fas fa-regular fa-calendar-days"></i>Events</a></li>
+                              <li><a href="LearnToArt.htm"><i class="fas fa-brands fa-leanpub"></i>learn to ART</a></li>
+                              <li><a href="ArtGallery.htm"><i class="fas fa-solid fa-palette"></i>Paintings</a></li>
+                              <li><a href="inSell.html"><i class="fas fa-solid fa-cart-arrow-down"></i>in sell</a></li>
+                              <li><a href="JewelleryTheme1"><i class="fas fa-solid fa-gem"></i>Jewellery</a></li>
+                              <li><a href="ContactUsTheme1"><i class="fas fa-solid fa-address-book"></i>Contact us</a></li>
+                          </ul>
+                      </div>
+                  </label>
+              </div>
+              <div class="navItem"><!--logo-->
+                  <a href="index.html"><img src="img/logo.png" width ="150" height="100" alt="logo" ></a>
+              </div>
+              <script src="search.js"></script>
+                  
+                  <div class="navItem"><!--search bar-->
+                      <div class="find">
+                      <input type="text" placeholder="search..." class="searchInput" onkeyup="onKeyUp()">
+                      <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
+                      </div>
+                  </div>
+              <div class="navItem"><!--log button-->
+                  <a href="log.html"><button class="log" onclick="openLog()">LOG IN</button></a>
+                  <button id="themeSwitcher">Switch Theme</button>
+        
+              </div>
+          </div>
+          <ul class="products"><!--WE NEED TO ADD MOST OF PRODUCTS NAME HERE-->
+            <li><a href="#">ARCHITECTURE</a></li>
+            <li><a href="#">MUSEUMS</a></li>
+            <li><a href="#">JEWELLERY</a></li>
+            <li><a href="#">PANELS</a></li>
+            <li><a href="#">IN SELL</a></li>
+            <li><a href="#">STARE NIGHT</a></li>
+            <li><a href="#">MONALISA</a></li>
+        </ul>
+        </nav>
+    <h1 id="gallery_heading">Art Gallery</h1>
+  <!--the div that contains all the paintings for row 1-->  
+  <div class="containerA">
+   <div class="one"><img class="two" onclick="displayTwo(0, 0)" src="./image/mona_liza_800x.jpg" alt="mona lisa"></div>
+   <div class="small">
+     <p class="infoOnPainting"><audio controls><source src="./image/mona.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio><br>Mona Lisa<br>painting by Leonardo da Vinci<br>was painted sometime between 1503 and 1519<br>it now hangs in the Louvre Museum, Paris<br>The painting presents a woman in half-body portrait, which has as a backdrop a distant landscape. Yet this simple description of a seemingly standard composition gives little sense of Leonardo’s achievement. The three-quarter view, in which the sitter’s position mostly turns toward the viewer, broke from the standard profile pose used in Italian art and quickly became the convention for all portraits, one used well into the 21<sup style="background-color: #d5c5c8;">st</sup> century. The subject’s softly sculptural face shows Leonardo’s skillful handling of sfumato (use of fine shading) and reveals his understanding of the musculature and the skull beneath the skin. The delicately painted veil, the finely wrought tresses, and the careful rendering of folded fabric demonstrate Leonardo’s studied observations and inexhaustible patience. Moreover, the sensuous curves of the sitter’s hair and clothing are echoed in the shapes of the valleys and rivers behind her. The sense of overall harmony achieved in the painting—especially apparent in the sitter’s faint smile—reflects Leonardo’s idea of the cosmic link connecting humanity and nature, making this painting an enduring record of Leonardo’s vision. In its exquisite synthesis of sitter and landscape, the Mona Lisa set the standard for all future portraits.<br>
+<button class="hide_details" onclick="hideTwo(0, 0)">hide details</button></p>
+   </div>
+   <div class="one"><img class="two" onclick="displayTwo(1, 1)" src="./image/The_Starry_Night_by_Vincent_van_Gogh_1889_800x.jpg" alt="starry night"></div>
+   <div class="small">
+     <p class="infoOnPainting">The Starry Night<br>painting by Vincent van Gogh<br>was painted in june 1889 after the previous version or it's predecessor that was painted back in 1888<br>it now hangs in the Museum of Modern Art, New York City<br>The oil-on-canvas painting is dominated by a night sky roiling with chromatic blue swirls, a glowing yellow crescent moon, and stars rendered as radiating orbs. One or two cypress trees, often described as flame-like, tower over the foreground to the left, their dark branches curling and swaying to the movement of the sky that they partly obscure. Amid all this animation, a structured village sits in the distance on the lower right of the canvas. Straight controlled lines make up the small cottages and the slender steeple of a church, which rises as a beacon against rolling blue hills. The glowing yellow squares of the houses suggest the welcoming lights of peaceful homes, creating a calm corner amid the painting’s turbulence.<br>
+<button class="hide_details" onclick="hideTwo(1, 1)">hide details</button></p>
+   </div>
+  </div>
+  <!--the div that contains all the paintings for row 2--> 
+  <div class="containerA">
+   <div class="five">
+    <div class="four"><img class="three" onclick="displayThree(0, 2)" src="./image/The_Tower_of_Babel_by_Pieter_Bruegel_the_Elder_1563_800x.jpg" alt="tower of babel"></div>
+    <div class="small">
+     <p class="infoOnPainting"><audio controls><source src="./image/babel.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio><br>The Tower of Babel<br>painting by Pieter Bruegel the Elder<br>was painted in 1563<br>it now hangs in the Kunsthistorisches Museum, Vienna.<br>Bruegel's depiction of the architecture of the tower, with its numerous arches and other examples of Roman engineering, is deliberately reminiscent of the Roman Colosseum, which Christians of the time saw as a symbol of both hubris and persecution. Bruegel had visited Rome in 1552–1553.The parallel of Rome and Babylon had a particular significance for Bruegel's contemporaries: Rome was the Eternal City, intended by the Caesars to last forever, and its decay and ruin were taken to symbolize the vanity and transience of earthly efforts. The Tower was also symbolic of the religious turmoil between the Catholic Church (which at the time conducted all services in Latin) and the polyglot Protestant religion that was increasingly popular in the Netherlands. The subject may have had a specific topicality, as the famous Polyglot Bible in six languages, a landmark in Biblical scholarship, was published in Antwerp in 1566. Although at first glance the tower appears to be a stable series of concentric pillars, upon closer examination it is apparent that none of the layers lies at a true horizontal. Rather the tower is built as an ascending spiral.The workers in the painting have built the arches perpendicular to the slanted ground, thereby making them unstable, and a few arches can already be seen crumbling. The foundation and bottom layers of the tower had not been completed before the higher layers were constructed.<br>
+<button class="hide_details" onclick="hideThree(2, 0)">hide details</button></p>
+    </div>
+   </div>
+   <div class="five">
+    <div class="four"><img class="three" onclick="displayThree(1, 3)" src="./image/ASundayAfternoonOnTheIslandOfLaGrandeJatte.jpg" alt="la grande jatte"></div>
+    <div class="small">
+     <p class="infoOnPainting"><audio controls><source src="./image/Jatte.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio><br>A Sunday on La Grande Jatte<br>painting by Georges Seurat<br>was painted between 1884 and 1886<br>it now hangs in the Art Institute of Chicago.<br>In the 1880s the lower-middle classes flocked to the Grande Jatte, an island in the Seine River in the northwestern suburbs of Paris, for a riverside stroll and a picnic on Sunday afternoons. This was the kind of subject matter that the Impressionists had made fashionable, but Seurat was far from embracing that art movement’s pursuit of the fleeting and spontaneous. He made more than 70 preliminary oil sketches and drawings for this formalized image, with its careful composition and emphasis on simplified geometric forms. During his two years working on La Grande Jatte, Seurat was also developing the pointilliste technique of applying color in dots that were intended to fuse when seen from a distance, and it coexists here with his more conventional earlier style. The painting marks the birth of pointillism, which Seurat called “chromo-luminarism,” and of the movement later called Neo-impressionism. Seurat revised A Sunday on La Grande Jatte—1884 in 1889, stretching the canvas in order to add a coloured border between the image and the white frame that encased it.
+Some 40 figures crowd the canvas, mostly in profile or full face. At first glance, they appear static and frozen in an uncommunicative proximity. Many figures have been identified as known Parisian stereotypes. For instance, the woman standing in the right foreground, with the striking bustle, is identified by her pet monkey—symbol of lasciviousness—as a woman of loose morals. The seated man with the top hat on the left is a flâneur, a fashionable stroller of boulevards. The shift from a shaded foreground to a bright background creates a strong sense of depth to which the recession of figures contributes, although there are some disorienting shifts in scale. Seurat said that his aim was to represent modern life in the style of a classical Greek frieze.<br>
+<button class="hide_details" onclick="hideThree(3, 1)">hide details</button></p>
+    </div>
+   </div>
+   <div class="five">
+    <div class="four"><img class="three" onclick="displayThree(2, 4)" src="./image/episodes_from_the_life_of_a_bishop_saint_1952.2.14.jpg" alt="bishop saint"></div>
+    <div class="small">
+     <p class="infoOnPainting"><audio controls><source src="./image/saint.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio><br>Episodes from the Life of a Bishop Saint<br>painting by Master of Saint Giles and Assistant<br>was painted in c. 1500<br>it now hangs in the National Gallery of Art, Washington<br>The Master of Saint Giles was a Franco-Flemish painter active, probably in Paris, about 1500, working in a delicate Late Gothic manner, with rendering of textures and light and faithful depictions of actual interiors that show his affinities with Netherlandish painting. It is not clear whether the Master of Saint Giles was a French painter who trained in the Low Countries (perhaps more likely), or a Netherlander who emigrated to France.
+His pseudonym was given him by Max Friedländer, who reconstructed part of the anonymous painter's oeuvre, starting from two panels devoted to Saint Giles (a Miracle and a Mass) in the National Gallery, London, that were part of the lefthand shutter of an altarpiece, and two further panels now in Washington from the same altarpiece. The hand of an assistant can be discerned in the Baptism of Clovis at the National Gallery of Art, Washington, who also have a panel with Episodes from the Life of a Bishop-Saint - perhaps Saint Leu, Saint Denis or Saint Remy. All four panels have, or had, single grisaille figures of saints (Saints Peter, Giles, Denis and an unidentified bishop-saint) in niches, imitating sculpture, on the reverse. The Washington pair, which were in poor condition, have been separated and are lost, although photographs exist. Undoubtedly there were further panels, whose subjects cannot be guessed, as the combination of scenes is original.
+The original location of the altarpiece has not yet been confirmed, although the choice of three scenes including Frankish Kings, and the very specific settings of scenes in the Abbey of Saint-Denis (Mass of Saint Giles, London), where the Kings of France were crowned, the royal Chapel of Sainte-Chapelle (Baptism of Clovis), and outside the cathedral of Notre Dame de Paris (Episodes), suggest a commission very close to the crown, perhaps the cover for the high altar at Saint-Denis. Another candidate is the church of St Leu-St-Gilles, on the Rue Saint-Denis in Paris. The unidentified bishop-saint stands on the steps of the now vanished church of Saint-Jean-le-Rond, next door to Notre-Dame, the main entrance to which can be seen behind to the left. The small church was used as a baptistry. Opposite the cathedral is the Hôtel-Dieu. Both buildings survived until the eighteenth century, and are known from engravings. The panel with the King hunting probably shows a view of Pontoise, now in the north-western suburbs of Paris. The views shown appear very accurate where they can be confirmed by later pictures, or their survival to the present, and the view of Saint-Denis in particular is a valuable record of the church-furnishings of the day, all destroyed before or during the French Revolution.
+More specific Netherlandish connections include his adaptation of Madonna types developed by Rogier van der Weyden, evinced by the head of a lady at the Metropolitan Museum, and a Madonna and Child, probably early, in the Louvre. To him is attributed a portrait of Philip the Handsome (Winterthur), who visited Paris in 1501, that appears to be the original version of one of the most common portrait types of this prince. There are two saints in Bern which show a more massive French style. A Betrayal of Christ in Brussels is a night-scene, illuminated only by a lantern. Like the Estonian-born Michael Sittow and Jean Hey (the Master of Moulins), he may demonstrate the international spread of Netherlandish style, or like Juan de Flandes, the spread of Netherlandish painters<br>
+<button class="hide_details" onclick="hideThree(4, 2)">hide details</button></p>
+    </div>
+   </div>
+  </div>
+  <!--the div that contains all the paintings for row 3--> 
+  <div class="containerA">
+   <div class="one"><img class="two" onclick="displayTwo(2, 5)" src="./image/Ivan _the_terrible_and_his_son.jpg" alt="ivan the terrible"></div>
+   <div class="small">
+     <p class="infoOnPainting">Ivan the Terrible and His Son Ivan on 16 November 1581<br>painting by Ilya Repin<br>was painted between 1883 and 1885<br>it now hangs in the Tretyakov Gallery in Moscow.<br>depicts the grief-stricken Russian tsar Ivan the Terrible cradling his dying son, the Tsarevich Ivan Ivanovich, shortly after the elder Ivan had dealt a fatal blow to his son's head in a fit of anger. The painting portrays the anguish and remorse on the face of the elder Ivan and the shock and heartbreak of the dying Tsarevich, shedding a tear at the unexpected betrayal and shock of having been killed by his father's hands.
+Repin used Grigoriy Myasoyedov, his friend and fellow artist, as the model for Ivan the Terrible, and writer Vsevolod Garshin for the Tsarevich<br>
+<button class="hide_details" onclick="hideTwo(5, 2)">hide details</button></p>
+   </div>
+   <div class="one"><img class="two" onclick="displayTwo(3, 6)" src="./image/Cronus_devouring_his_son.jpeg" alt="saturn"></div>
+   <div class="small">
+     <p class="infoOnPainting">Saturn<br>painting by Francisco Goya<br>was painted between 1821 and 1823<br>it now hangs in museo del prado<br>The haunting Saturn illustrates the myth of the Roman god Saturn, who, fearing that his children would overthrow him, ate them. Taking the myth as a starting point, the painting may be about God’s wrath,
+the conflict between old age and youth, or Saturn as Time devouring all things. The painting is also of a piece with the many paintings and drawings Goya made
+of the horrors of war and human brutality The avernal darkness from which the horrific scene of Saturn emerges speaks plainly to the noted art critic John Berger’s 
+observation that “the light in [Goya’s] work is merciless for the simple reason that it shows up cruelty.”  The god’s wide-eyed stare suggests madness and paranoia, 
+and he seems unselfconscious in carrying out his horrific act.<br>
+<button class="hide_details" onclick="hideTwo(6, 3)">hide details</button></p>
+   </div>
+  </div>
+  <!--the div that contains all the paintings for row 4--> 
+  <div class="containerA">
+   <div class="five">
+    <div class="four"><img class="three" onclick="displayThree(3, 7)" src="./image/vermeer-meisje-met-de-parel-mh670-mauritshuis-den-haag.jpg" alt="girl with pearl earring"></div>
+    <div class="small">
+     <p class="infoOnPainting"><audio controls><source src="./image/pearl.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio><br>Girl with a Pearl Earring<br>painting by Johannes Vermeer<br>was painted in c.1665<br>it now hangs in the Mauritshuis museum in The Hague.<br>Historians believe Vermeer painted the small piece (17.52 × 15.35 inches [44.5 × 39 cm]) around 1665, during the period in which he executed a group of paintings with a shared pearl motif.
+Girl with a Pearl Earring represents a young woman in a dark shallow space, an intimate setting that draws the viewer’s attention exclusively on her. She wears a blue and gold turban, the titular pearl earring, and a gold jacket with a visible white collar beneath. Unlike many of Vermeer’s subjects, she is not concentrating on a daily chore and unaware of her viewer. Instead, caught in a fleeting moment, she turns her head over her shoulder, meeting the viewer’s gaze with her eyes wide and lips parted as if about to speak. Her enigmatic expression coupled with the mystery of her identity has led some to compare her to the equivocal subject in Leonardo da Vinci’s Mona Lisa (c. 1503–19). Unlike the Mona Lisa, however, Girl with a Pearl Earring is not a portrait but a tronie, a Dutch term for a character or type of person. A young woman might have sat for Vermeer, but the painting is not meant to portray her or any specific individual in the same way that Leonardo’s piece portrayed an existing person (likely Lisa Gherardini, the wife of a Florentine merchant). Vermeer’s subject is a generic young woman in exotic dress, a study in facial expression and costume. The work attests to Vermeer’s technical expertise and interest in representing light. The soft modeling of the subject’s face reveals his mastery of using light rather than line to create form, while the reflection on her lips and on the earring show his concern for representing the effect of light on different surfaces.<br>
+<button class="hide_details" onclick="hideThree(7, 3)">hide details</button></p>
+    </div>
+   </div>
+   <div class="five">
+    <div class="four"><img class="three" onclick="displayThree(4, 8)" src="./image/persistence_of_memory_by_tesparg-d4qo048.jpg" alt="persistence of memory"></div>
+    <div class="small">
+     <p class="infoOnPainting"><audio controls><source src="./image/memo.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio><br>The Persistence of Memory<br>painting by Salvador Dalí<br>was painted in 1931<br>it now hangs in the Museum of Modern Art, New York City.<br>The Persistence of Memory (La persistencia de la memoria), also known as Soft Watches or Melting Clocks, is one of Dalí’s most famous pieces. The piece is small, measuring just 9.5 × 13 inches (24 × 33 cm). Several of Dalí’s favorite recurring images are present in this work. The setting is one he often used: the seashore of northernmost Catalonia at Cape Creus, with a favourite landmark, Mount Pani, casting its shadow upon the beach. His melting-clock imagery mocks the rigidity of chronometric time. The watches themselves look like soft cheese—indeed, by Dalí’s own account they were inspired by hallucinations after eating Camembert cheese. (He used a process he called the “paranoiac critical method,” in which he deliberately provoked hallucinations as a path to his own subconscious.) In the center of the picture, under one of the watches, is a distorted human face in profile, an image that also appears in his earlier work The Great Masturbator (1929). The ants on the plate represent decay, as well as Dalí’s own well-known fear of insects. Some art historians speculate that the painting was inspired by and a response to Albert Einstein’s theory of relativity. In 1954 Dalí painted a sequel to the original work, called The Disintegration of the Persistence of Memory (La desintegración de la persistencia de la memoria), which adds an ominous suggestion of bullets to the original. It should be noted, however, that in public a lecture he declared that he did not know the meaning of his own work, so that viewers should not worry if they could not decipher it themselves.<br>
+<button class="hide_details" onclick="hideThree(8, 4)">hide details</button></p>
+    </div>
+   </div>
+   <div class="five">
+    <div class="four"><img class="three" onclick="displayThree(5, 9)" src="./image/470px-The_Scream.jpg" alt="the scream"></div>
+    <div class="small">
+     <p class="infoOnPainting"><audio controls><source src="./image/scream.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio><br>The Scream<br>painting by Edvard Munch<br>was painted in 1893<br>it now hangs in the National Gallery, Oslo.<br>
+The Scream is one of the most familiar images in modern art and a canonical piece in the art nouveau style. It stemmed from a panic attack that Munch suffered in 1892, which he recounted artistically in a sketch from that year that he called Despair. He described how this psychologically fraught episode occurred as he was strolling along a path outside Kristiania (now Oslo): “The sun was setting and the clouds turned as red as blood. I sensed a scream passing through nature. I felt as though I could actually hear the scream. I painted this picture, painted the clouds like real blood. The colors shrieked.” Munch represented this scream through a series of undulating lines that pressed in on the figure like shock waves, reducing its face to a primal image of fear and standing in visual contrast to the straight path on which the three figures are walking. He accentuated this effect by showing that his two companions, who are seen walking away, were unscathed, thus implying that the trauma came from his own mind, rather than the world outside. It is conjectured that the central figure in the painting is modelled on an Inca mummy that Munch saw in a Parisian museum while visiting the World’s Fair there in 1889. Whatever the case, on a copy of the picture, Munch wrote: “Could only have been painted by a madman.”
+The first version of the painting was untitled, while the second bore the German title Geschrei. Known in English as The Scream, the work has become a popular representation of the human condition and an icon of the anxiety of modern life. It was an immediate sensation, reproduced widely in art magazines and appearing as the cover illustration for a book on mental illness and art as early as 1908. The painting’s central figure has appeared throughout Western popular culture in everything from television to emoji, and it has been parodied in motion pictures, including, arguably, Macaulay Culkin’s iconic grimace in John Hughes’s Home Alone.<br>
+<button class="hide_details" onclick="hideThree(9, 5)">hide details</button></p>
+    </div>
+   </div>
+  </div>
+  <!--the div that contains all the paintings for row 5--> 
+  <div class="containerA">
+   <div class="one"><img class="two" onclick="displayTwo(4, 10)" src="./image/unequal_marriage.jpeg" alt="unequal marriage"></div>
+   <div class="small">
+    <p class="infoOnPainting"><audio controls><source src="./image/Marriage.wav" type="audio/wav">Your browser does not support the audio element.</audio><br>Unequal Marriage<br>painting by Vasili Pukirev<br>was painted in 1862<br>it now hangs in Tretyakov Gallery, Moscow, Russia.<br>
+Unequal Marriage was unprecedented for its time. Society was excited by a new and relevant topic – the power of money. According to the most popular version of the story, this scene is deeply personal for Pukirev — this is his beloved marrying a rich prince. Most likely, she was a poor woman without a dowry and her parents considered marriage to a wealthy, prosperous prince to be the best option for her.
+ But what about Pukirev? He just graduated and his career as a painter did not bring the necessary income to support her. Beauty, after all, was a very popular product.
+Vasili Pukirev painted this picture in a difficult state of mind. Look at the man on the right, he undoubtedly resembles the artist himself. Furthermore, his pose expresses obvious dissatisfaction with what is happening.
+The groom seems entirely composed of angles and straight lines, unlike the soft, angelic bride. He symbolizes fading, mortification, the atmosphere in which the maiden beauty of the bride is to fade. He is wearing an expensive suit and has an unnatural posture, which is supported by a tight corset. His head barely turns, neck squeezed by a high collar, and his dull eyes haughtily look at those around him.
+The bride is the only figure in the image painted in light colors. She is still a child, barely holding back tears. This day seems to be the most bitter of her life. Her delicate face, framed by blond curls, is sad. A candle in her child’s hand leans over, wax dripping onto her wedding dress. Her right hand is extended to the priest who is about to put a wedding ring on her thin finger. She is already indifferent to her own fate.
+There are two very strange figures in this room, two old women. Well, nothing out of the ordinary – old women came to see the wedding. Maybe they are the groom’s sisters. But it begs the question: why are they wearing the same wreaths as the bride’s? One even has a white dress!
+Looking more closely, it appears more like a sheet. Perhaps this sheet is rather a burial shroud. The figure of the second bride behind the priest looks even stranger because ordinary guests are not allowed to stand next to the priest.
+Unless, of course, they came from another world.<br>
+<button class="hide_details" onclick="hideTwo(10, 4)">hide details</button></p>
+   </div>
+   <div class="one"><img class="two" onclick="displayTwo(5, 11)" src="./image/reluctant_bride.jpeg" alt="reluctant bride"></div>
+   <div class="small">
+     <p class="infoOnPainting">The Reluctant Bride<br>painting by  Auguste Toulmouche<br>was painted in 1866<br>it now hangs Sotheby's in New York<br> 
+Departing from Toulmouche's usual paintings of a single woman, this work is a more complicated composition showing a group of women in an opulently decorated room. At the centre, a young woman is seated in a flowing white satin silk dress with high collar trimmed with white fur. She stares out at the viewer, with an ambivalent expression that has attracted various interpretations. She is attended by two women of similar age: the woman to the left in a blue-grey satin gown with a patterned shawl bends to kiss her forehead, while the woman to the right in burnt orange velvet gown is crouching to hold her left hand. A girl stands to the right, looking in a mirror as she tries on a bridal headdress of orange blossom, echoing the central figure's bouquet.
+The scene may be set in shortly before the wedding of the central young woman, waiting in a parlour or drawing room with her bridesmaids. Her expression may express hostility, or perhaps resignation to her arranged marriage. The figures congregate in the lower half of the canvas, with upper half devoted to the flamboyantly decorated room and its gilded furniture.<br>
+<button class="hide_details" onclick="hideTwo(11, 5)">hide details</button></p>
+   </div>
+  </div>
+  <!--the div that contains all the paintings for row 6--> 
+  <div class="containerA">
+   <div class="five">
+    <div class="four"><img class="three" onclick="displayThree(6, 12)" src="./image/pompeii_2.jpeg" alt="pompeii"></div>
+    <div class="small">
+     <p class="infoOnPainting"><audio controls><source src="./image/pompeii.wav" type="audio/wav">Your browser does not support the audio element.</audio><br>The Last Day of Pompeii<br>painting by Karl Bryullov<br>was painted between 1830 and 1833<br>it now hangs in the State Russian Museum, Saint Petersburg<br>
+The ground is shaking. The sky suddenly darkens as if night has descended on the land. Hundreds of citizens of Pompeii stop in awe and fear, witnessing one of the most legendary natural disasters in human history: the volcanic eruption of Mount Vesuvius. Russian artist Karl Bryullov managed to convey all the emotions that must have been felt during this disaster in his Last Day of Pompeii painting just as if he witnessed the event himself in AD 79. The event that enveloped the city of Pompeii in volcanic ash killing most of its inhabitants. As a scene from the ancient world it was an appropriate subject for a history painting, then regarded as the highest genre of painting, and the magnitude of the event also made it suitable for a large canvas that would allow Bryullov to showcase all his skills. its positioning between Neoclassicism, the predominant style in Russia at the time, and Romanticism as increasingly practised in France. The painting was received to near universal acclaim and made Bryullov the first Russian painter to have an international reputation. In Russia it was seen as proving that Russian art was as good as art practised in the rest of Europe. It inspired Edward Bulwer-Lytton's world-famous novel The Last Days of Pompeii. Critics in France and Russia both noted, however, that the perfection of the classically modelled bodies seemed to be out of keeping with their desperate plight and the 
+overall theme of the painting, which was a Romantic one of the sublime power of nature to destroy man's creations<br>
+<button class="hide_details" onclick="hideThree(12, 6)">hide details</button></p>
+    </div>
+   </div>
+   <div class="five">
+    <div class="four"><img class="three" onclick="displayThree(7, 13)" src="./image/James_Hamilton_-_The_Last_Days_of_Pompeii_1864_-_(MeisterDrucke-571246).jpg" alt="another painting on pompeii"></div>
+    <div class="small">
+     <p class="infoOnPainting">The Last Days of Pompeii<br>painting by James Hamilton<br>was painted in 1864<br>it is currently not on display.<br>
+This is yet another fascinating painting on The eruption of Mount Vesuvius in 79 C.E. and subsequent devastation of Pompeii (in present-day Italy) was a popular and fascinating narrative in the mid-eighteenth century, particularly among Romantic painters on both sides of the Atlantic. At that time the volcano began a sustained period of renewed activity. Simultaneously, archaeologists began excavations of the ancient buried city. This cataclysmic theme, which lends itself to ruminations on the cyclical nature of societies and civilizations, continued to appeal to artists in the mid-nineteenth century.<br>
+<button class="hide_details" onclick="hideThree(13, 7)">hide details</button></p>
+    </div>
+   </div>
+   <div class="five">
+    <div class="four"><img class="three" onclick="displayThree(8, 14)" src="./image/two_crowns.jpeg" alt="two crowns"></div>
+    <div class="small">
+     <p class="infoOnPainting"><audio controls><source src="./image/crowns.wav" type="audio/wav">Your browser does not support the audio element.</audio><br>The Two Crowns<br>painting by Frank Dicksee<br>was painted in 1900<br>it now hangs in the National Gallery of British Art<br>
+the crowns mentioned in the title are of course the one atop the medieval king’s head, as well as the crown of thorns that jesus christ wears in the upper right corner of the painting; startled by the crucifix, the king is reminded of the transience of earthly power and success. The detail in this piece is extraordinary.
+This artist was highly unusual in that he depicted historic scenes within his paintings, but they were not actually inspired by specific events, more inspired by the past. That immediately placed him at odds with the Pre-Raphaelite Brotherhood who preferred to recreate scenes directly from specific mythological tales or more recent domestic poetry. Some of the finest examples of that include Waterhouse's Lady of Shalott and Hylas and the Nymphs. That said, Dicksee's imagination was extraordinary and the scene that we find in front of us here feels entirely real. He also goes into incredible detail right across the composition, with every last detail of each figure's attire being carefully and thoughtfully delivered. Perhaps the artist enjoyed the freedom of working from his own imagination, where specific elements of a mythological tale would all have to be featured by an artist, or they would come under criticism.<br>
+<button class="hide_details" onclick="hideThree(14, 8)">hide details</button></p>
+    </div>
+   </div>
+  </div>
+  <!--the div that contains all the paintings for row 7--> 
+  <div class="containerA">
+   <div class="one"><img class="two" onclick="displayTwo(6, 15)" src="./image/Raphael_Madonna_dell_Granduca-768x1168.jpg" alt="madonna dell granduca"></div>
+   <div class="small">
+     <p class="infoOnPainting"><audio controls><source src="./image/madonna.wav" type="audio/wav">Your browser does not support the audio element.</audio><br>Madonna del Granduca<br>painting by the famous Italian artist Raphael<br>was painted in 1505<br>it now hangs in the Palatine Gallery.<br>
+The painting beautifully depicts the motherly love of the Virgin Mary for Jesus. The blue colour of the mantle symbolises her role as the Queen of Heaven. Furthermore, the red colour of her gown symbolises the blood of Christ, representing the crucifixion of Jesus.The initial perception behind the painting is that The Virgin Mary is holding Baby Jesus in her arms with both of them having haloes over their heads. Furthermore, a darker background is used so as to draw the complete attention of the viewer towards Mary and Jesus.
+
+Apart from being dressed in a deep blew mantle and a red gown, Madonna is seen to have a veil over her head. As she looks down with her eyelid half-closed, it appears as if she is lost in thought.
+
+Meanwhile, Baby Jesus is sitting peacefully in the arms of his mother. He appears healthy and chubby, bearing a serene expression as he faces the direction of the viewer.<br>
+<button  class="hide_details" onclick="hideTwo(15, 6)">hide details</button></p>
+   </div>
+   <div class="one"><img class="two" onclick="displayTwo(7, 16)" src="./image/the_annunciation_1961.9.22.jpg" alt="the annunciation"></div>
+   <div class="small">
+     <p class="infoOnPainting"><audio controls><source src="./image/anun.wav" type="audio/wav">Your browser does not support the audio element.</audio><br>The Annunciation<br>painting by Juan de Flandes<br>was painted between ca. 1508 and 1519<br>it now hangs in the National Gallery of Art, Washington, D.C.<br>
+Juan de Flandes was a Flemish painter active in Spain from 1496 to 1519. His actual name is unknown, although an inscription Juan Astrat on the back of one work suggests a name such as "Jan van der Straat". Jan Sallaert, who became a master in Ghent in 1480, has also been suggested. He worked in the Early Netherlandish style.
+
+He was born around 1460 in Flanders (modern Belgium). He evidently trained in his home country, most likely in Ghent, as his work shows similarities to that of Joos van Wassenhove, Hugo van der Goes and other Ghent artists. He is only documented after he became an artist at the court of Queen Isabella I of Castile, where he is first mentioned in the accounts in 1496. He is described as "court painter" by 1498 and continued in the queen's service until her death in 1504. He mostly painted portraits of the royal family, but also the majority of a large series of small (21.3 x 16.7 cm) panels for a polyptych altarpiece for the queen. The panels have been dispersed and the largest number of panels is in the royal collection in Madrid.
+
+After Isabella's death in 1504 Juan de Flandes turned to ecclesiastical commissions from Spanish churches, beginning in Salamanca in 1505–1507. He was later based in Palencia, where there is a large reredos in the cathedral. In Palencia his wife was described as a widow in December 1519. The overwhelming majority of his work held in collections outside Spain dates from this later period during which he concentrated on religious themes. Panels from a large altarpiece from a Palencian church are divided between the Prado and National Gallery of Art, Washington, who have four panels each.
+
+His works show the Early Netherlandish style of Ghent adapted to the Spanish taste and landscape, notably the requirements for groups of compartmented scenes for altarpieces. His colouring is refined, "with a preference for rather acid hues", and "while his feeling for space and light is sophisticated, a tendency to divide space into a succession of thin planes becomes a mannerism in his late works".<br>
+<button class="hide_details" onclick="hideTwo(16, 7)">hide details</button></p>
+   </div>
+  </div>
+  <!--the div that contains all the paintings for row 8--> 
+  <div class="containerA">
+    <div class="five">
+     <div class="four"><img class="three" onclick="displayThree(9, 17)" src="./image/queen-nefertari-being-led-by-isis-ca-1279-1213-b-c.jpg!Large.jpg" alt="queen nefertari led by isis"></div>
+     <div class="small">
+         <p class="infoOnPainting">Queen Nefertari being led by Isis<br>discovered by Charles K. Wilkinson<br>was painted in ca. 1279–1213 B.C<br>it is currently on display at the  Met Fifth Avenue in Gallery 135.<br>
+   Nefertari was the main wife of pharaoh Ramesses II and her tomb with its vivid wall paintings is one of the most beautiful tombs in Egypt. This watercolor copy depicts the queen (left) being led by the goddess Isis (right). Noteworthy is that Nefertari’s husband, Ramesses II, is absent in these scenes, indicating the queen's high status that allowed her to directly interact with the deities without him; such depictions would not be possible for non-royal individuals.<br>
+   <button class="hide_details" class="hide_details" onclick="hideThree(17, 9)">hide details</button></p>
+     </div>
+    </div>
+    <div class="five">
+     <div class="four"><img class="three" onclick="display()" src="./image/orange _seller.jpeg" alt="the orange seller"></div>
+     <div class="small">
+         <p class="infoOnPainting">The Orange Seller<br>painted by Spanish artist Enrique Serra y Auque<br>was painted in 1908.<br>it is currently not on display<br>It's one portrait oil on canvas painting created in 1908. The painting is privately owned and may not be always open to the public. Enrique Serra y Auque made most paintings about garden and landscape.<br>
+   <button class="hide_details" class="hide_details" onclick="hide()">hide details</button></p>
+     </div>
+    </div>
+    <div class="five">
+     <div class="four"><img class="three" onclick="displayThree(11, 19)" src="./image/stela-of-the-sculptor-qen-worshipping-amenhotep-i-and-ahmose-nefertari-ca-1279-1213-b-c.jpg!Large.jpg" alt="qen worshipping amenhotep"></div>
+     <div class="small">
+         <p class="infoOnPainting">Stela of the Sculptor Qen worshipping Amenhotep I and Ahmose-Nefertari<br>painting by unknown<br>was painted in ca. 1279–1213 B.C.<br>it is currently on display at The Met Fifth Avenue in Gallery 124.<br>
+   One of the select "servants in the Place of Truth," Qen was a member of the community of arts and craftsmen responsible for building and decorating the tombs of the New Kingdom pharaohs in the Valley of the Kings. This stela was found in 1862 in Qen's tomb at the workmen's village of Deir el-Medina. Qen's titles, as recorded on the stela, were "sculptor of Amun in the Place of Truth" and "sculptor of Amun in Karnak" suggesting that he specialized in carving relief.
+   
+   In the lower register of the stela, Qen, his wife Nefertari, and their two sons, Merymery and Huy, are shown paying homage to the two seated figures above. These represent Amenhotep I, second king of Dynasty 18, and his mother Ahmose-Nefertari. By Dynasty 19, these two deified members of the royal family had become patrons of the Theban necropolis and especially of the workmen and their families.<br>
+   <button class="hide_details" onclick="hideThree(19, 11)">hide details</button></p><br>
+     </div>
+    </div> 
+  </div>  
+  <!--the heading for the table-->
+ <h2 id="source">Sources</h2>
+ <table class="paint">
+  <tr class="paint">
+   <th class="paint">#</th>
+   <th class="paint">Name of Painting</th>
+   <th class="paint">Source of Image</th>
+   <th class="paint">Source of Information</th>
+  </tr>
+  <tr class="paint">
+   <td class="paint">1</td>
+   <td class="paint">Mona Lisa</td>
+   <td rowspan="3" class="paint"><a href="https://artistro.com/blogs/news/30-most-famous-artworks-in-history-the-greatest-art-of-all-time" target="_blank">Artistro</a></td>
+   <td class="paint"><a href="https://www.britannica.com/topic/Mona-Lisa-painting" target="_blank">Britannica</a></td>
+  </tr>
+  <tr class="paint">
+   <td class="paint">2</td>
+   <td class="paint">Starry Night</td>
+   <td class="paint"><a href="https://www.britannica.com/topic/The-Starry-Night" target="_blank">Britannica</a></td>
+  </tr>
+  <tr class="paint">
+   <td class="paint">3</td>
+   <td class="paint">The The Tower of Babel</td>
+   <td class="paint"><a href="https://en.m.wikipedia.org/wiki/The_Tower_of_Babel_(Bruegel)" target="_blank">Wikipedia</a></td>
+  </tr>
+  <tr class="paint">
+   <td class="paint">4</td>
+   <td class="paint">A Sunday on La Grande Jatte</td>
+   <td class="paint"><a href="https://www.metmuseum.org/art/collection/search/437658" target="_blank">The Met Museum</a></td>
+   <td class="paint"><a href="https://www.britannica.com/topic/The-Starry-Night" target="_blank">Britannica</a></td>
+  </tr>
+  <tr class="paint">
+   <td class="paint">5</td>
+   <td class="paint">Episodes from the life of a Bishop Saint</td>
+   <td class="paint"><a href="https://en.m.wikipedia.org/wiki/File:Episodes_from_the_Life_of_a_Bishop_Saint_A14915.jpg" target="_blank">Wikipedia</a></td>
+   <td class="paint"><a href="https://en.wahooart.com/Art.nsf/Rubriques" target="_blank">wahooart</a></td>
+  </tr>
+  <tr class="paint">
+   <td class="paint">6</td>
+   <td class="paint">Ivan the Terrible and his Son</td>
+   <td colspan="2" class="paint"><a href="https://en.m.wikipedia.org/wiki/Ivan_the_Terrible_and_His_Son_Ivan" target="_blank">Wikipedia</a></td>
+  </tr>
+  <tr class="paint">
+   <td class="paint">7</td>
+   <td class="paint">Cronus devouring his son</td>
+   <td class="paint"><a href="https://www.pinterest.com/pin/421719952612948064/" target="_blank">Pinterest</a></td>
+   <td class="paint"><a href="https://www.britannica.com/topic/Saturn-painting-by-Goya" target="_blank">Britannica</a></td>
+  </tr>
+  <tr class="paint">
+   <td class="paint">8</td>
+   <td class="paint">Girl with Pearl Earring</td>
+   <td rowspan="2" class="paint"><a href="https://artistro.com/blogs/news/30-most-famous-artworks-in-history-the-greatest-art-of-all-time" target="_blank">Artistro</a></td>
+   <td class="paint"><a href="https://www.britannica.com/topic/Girl-with-a-Pearl-Earring-by-Vermeer" target="_blank">Britannica</a></td>
+  </tr>
+  <tr class="paint">
+   <td class="paint">9</td>
+   <td class="paint">The Presistence of Memory</td>
+   <td class="paint"><a href="https://www.britannica.com/topic/The-Persistence-of-Memory" target="_blank">Britannica</a></td>
+  </tr>
+  <tr class="paint">
+   <td class="paint">10</td>
+   <td class="paint">The Scream</td>
+   <td class="paint"><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/The_Scream.jpg/603px-The_Scream.jpg" target="_blank">Wikipedia</a></td>
+   <td class="paint"><a href="https://www.britannica.com/topic/The-Scream-by-Munch" target="_blank">Britannica</a></td>
+  </tr>
+  <tr class="paint">
+   <td class="paint">11</td>
+   <td class="paint">Unequal Marriage</td>
+   <td colspan="2" class="paint"><a href="https://www.dailyartmagazine.com/unequal-marriage-by-vasili-pukirev/" target="_blank">Daily Art Magazine</a></td>
+  </tr>
+  <tr class="paint">
+   <td class="paint">12</td>
+   <td class="paint">Reluctant Bride</td>
+   <td colspan="2" class="paint"><a href="https://en.m.wikipedia.org/wiki/The_Reluctant_Bride" target="_blank">Wikipedia</a></td>
+  </tr>
+  <tr class="paint">
+   <td class="paint">13</td>
+   <td class="paint">The last days of Pompeii</td>
+   <td class="paint"><a href="https://en.m.wikipedia.org/wiki/The_Last_Day_of_Pompeii" target="_blank">Wikipedia</a></td>
+   <td class="paint"><a href="https://theculturetrip.com/europe/russia/articles/history-of-a-painting-last-day-of-pompeii-by-karl-bryullov" target="_blank">the culture trip</a></td>
+  </tr>
+  <tr class="paint">
+   <td class="paint">14</td>
+   <td class="paint">the last day of Pompeii</td>
+   <td class="paint"><a href="https://en.m.wikipedia.org/wiki/File:Brooklyn_Museum_-_The_Last_Days_of_Pompeii_-_James_Hamilton_-_overall.jpg" target="_blank">Wikipedia</a></td>
+   <td class="paint"><a href="https://www.brooklynmuseum.org/opencollection/objects/1138" target="_blank">brooklyn museum</a></td>
+  </tr>
+  <tr class="paint">
+   <td class="paint">15</td>
+   <td class="paint">Two Crowns</td>
+   <td class="paint"><a href="https://www.pinterest.com/pin/780459810433287800/" target="_blank">Pinterest</a></td>
+   <td class="paint"><a href="https://www.thehistoryofart.org/frank-dicksee/two-crowns/" target="_blank">the history of art</a></td>
+   </tr>
+   <tr class="paint">
+    <td class="paint">16</td>
+    <td class="paint">Madonna Del Granduca</td>
+    <td colspan="2" class="paint"><a href="https://themalestrom.com/culture/remarkable-story-madonna-child-painting/" target="_blank">The Mailstrom</a></td>
+   </tr class="paint">
+   <tr>
+    <td class="paint">17</td>
+    <td class="paint">The Annunciation</td>
+    <td class="paint"><a href="https://www.nga.gov/collection/art-object-page.46121.html" target="_blank">National Gallery of Art</a></td>
+    <td class="paint"><a href="https://artvee.com/dl/the-annunciation-40/" target="_blank">artvee</a></td>
+   </tr>
+   <tr class="paint">
+   <td class="paint">18</td>
+   <td class="paint">Queen Nefertari being led by Isis</td>
+   <td colspan="2" class="paint"><a href="https://www.metmuseum.org/art/collection/search/557811" target="_blank">The Met Museum</a></td>
+  </tr>
+  <tr class="paint">
+  <td class="paint">19</td>
+  <td class="paint">The Orange Seller</td>
+  <td class="paint"><a href="https://en.m.wikipedia.org/wiki/File:The_Orange_Seller.jpg" target="_blank">Wikipedia</a></td>
+  <td class="paint"><a href="https://paintingz.com/repro-the-orange-seller-enrique-serra-y-auque-887611.html" target="_blank">paintingz</a></td>
+ </tr>
+ <tr class="paint">
+ <td class="paint">20</td>
+ <td class="paint">Worshipping Amenhotep and Ahmose-Nefertari</td>
+ <td colspan="2" class="paint"><a href="https://www.metmuseum.org/art/collection/search/549536" target="_blank">The Met Museum</a></td>
+</tr>
+ </table>
+ <iframe src="./image/ad_1.jpg" id="advertisement">ADVERTISEMENT</iframe>
+ <footer class="footer"><!--footer-->
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('themeSwitcher').addEventListener('click', function() {
+        var themeLink = document.getElementById('themeLink');
+        if (themeLink.getAttribute('href') === 'style1.css') {
+            themeLink.setAttribute('href', 'style2.css');
+        } else {
+            themeLink.setAttribute('href', 'style1.css');
+        }
+    });
+</script>
+ <script src="DisplayAndHide.js"></script>
+</body>
+</html>
+    
