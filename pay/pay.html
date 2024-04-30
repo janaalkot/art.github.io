@@ -171,7 +171,19 @@
         </form>
     </div>
     <script>
-       // Function to save form data to local storage
+       document.addEventListener('DOMContentLoaded', function () {
+            loadFormData(); // Load form data when the page loads
+
+            // Save form data and show message when the form is submitted
+            document.getElementById('myForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                saveFormData();
+                // Reset form after submission
+                document.getElementById('myForm').reset();
+            });
+        });
+
+        // Function to save form data to local storage
         function saveFormData() {
             let formDataArray = JSON.parse(localStorage.getItem('formData'));
             if (!Array.isArray(formDataArray)) {
@@ -201,32 +213,26 @@
         // Function to show message with close button
         function showMessage(message) {
             const messageElement = document.getElementById('message');
-            messageElement.textContent = message;
-            messageElement.style.display = 'block'; // Show the message
+            if (messageElement) {
+                messageElement.textContent = message;
+                messageElement.style.display = 'block'; // Show the message
 
-            // Create close button
-            const closeButton = document.createElement('button');
-            closeButton.textContent = 'x';
-            closeButton.className = 'closeButton'; // Add class for styling
-            closeButton.onclick = function () {
-                messageElement.textContent = '';
-                messageElement.style.display = 'none'; // Hide the message
-            };
+                // Create close button
+                const closeButton = document.createElement('button');
+                closeButton.textContent = 'x';
+                closeButton.className = 'closeButton'; // Add class for styling
+                closeButton.onclick = function () {
+                    messageElement.textContent = '';
+                    messageElement.style.display = 'none'; // Hide the message
+                };
 
-            // Append close button to message
-            messageElement.appendChild(closeButton);
+                // Append close button to message
+                messageElement.appendChild(closeButton);
+            } else {
+                console.error("Element with id 'message' not found.");
+            }
         }
 
-        // Load form data when the page loads
-        window.onload = loadFormData;
-
-        // Save form data and show message when the form is submitted
-        document.getElementById('myForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-            saveFormData();
-            // Reset form after submission
-            document.getElementById('myForm').reset();
-        });
 
     </script>
 </body>
