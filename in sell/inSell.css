@@ -539,13 +539,12 @@ button {
 #me {
     position: sticky;
     margin-bottom: 0%;
-    margin-left: 10%;
+    margin-left: 15%;
     margin-top: 0;
     right: 0%;
-    margin-right: 77%;
+    margin-right: 75%;
     z-index: 999;
     padding: 10px 10px;
-
     background-color: #3b332b;
 }
 
