@@ -67,7 +67,7 @@ header {
 .music {
     border-radius: 40px;
     float: inline-end;
-    right: 5px;
+    left: 80%;
     top: 2%;
 }
 
@@ -937,21 +937,15 @@ nav
 
 .instructions ul {
     color: black;
-    /* Set text color to black */
     list-style-type: disc;
-    /* Use circular bullets */
 }
 
 .instructions ul ul {
     list-style-type: circle;
-    /* Use circle bullets for nested lists */
 }
 
 .instructions h2 {
     color: black;
-    /* Set title color to black */
     font-size: 20px;
-    /* Adjust font size */
     margin-bottom: 10px;
-    /* Add margin below the title */
 }
