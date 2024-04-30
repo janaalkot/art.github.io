@@ -170,8 +170,10 @@
 <p id="message"></p>
         </form>
     </div>
+   <div id="message" style="display: none;"></div>
+
     <script>
-      // Function to save form data to local storage
+        // Function to save form data to local storage
         function saveFormData() {
             let formDataArray = JSON.parse(localStorage.getItem('formData'));
             if (!Array.isArray(formDataArray)) {
@@ -184,7 +186,6 @@
             };
             formDataArray.push(formData);
             localStorage.setItem('formData', JSON.stringify(formDataArray));
-            showMessage('Form ata Is Being Saved !');
         }
 
         // Function to load form data from local storage
@@ -198,37 +199,29 @@
             }
         }
 
-        // Function to show message with close button
-        function showMessage(message) {
-            const messageElement = document.getElementById('message');
-            messageElement.textContent = message;
-            messageElement.style.display = 'block'; // Show the message
-
-            // Create close button
-            const closeButton = document.createElement('button');
-            closeButton.textContent = 'x';
-            closeButton.className = 'closeButton'; // Add class for styling
-            closeButton.onclick = function () {
-                messageElement.textContent = '';
-                messageElement.style.display = 'none'; // Hide the message
-            };
-
-            // Append close button to message
-            messageElement.appendChild(closeButton);
-        }
-
         // Load form data when the page loads
         window.onload = loadFormData;
 
-        // Save form data and show message when the form is submitted
+        // Save form data when the form is submitted
         document.getElementById('myForm').addEventListener('submit', function (event) {
             event.preventDefault();
             saveFormData();
+            document.getElementById('message').innerText = 'Form data is being saved!';
+            document.getElementById('message').style.display = 'block';
+            addCloseButton();
             // Reset form after submission
             document.getElementById('myForm').reset();
         });
 
-
+        // Function to add close button to the message
+        function addCloseButton() {
+            const closeButton = document.createElement('button');
+            closeButton.innerText = '×';
+            closeButton.onclick = function () {
+                document.getElementById('message').style.display = 'none';
+            };
+            document.getElementById('message').appendChild(closeButton);
+        }
     </script>
 </body>
 
