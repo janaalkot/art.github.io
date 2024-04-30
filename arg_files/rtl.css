@@ -1,0 +1,638 @@
+/*
+Theme Name: Custom Theme
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+
+/* #region - global */
+
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+    text-align: right;
+}
+
+/* #endregion */
+/* #region - site-header */
+
+.header__logo {
+    margin-left: 4rem;
+    margin-right: 0;
+}
+
+.header__secondary-menu {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.header__nav-container a:after {
+    transform-origin: right;
+}
+
+.for-desktop .header__nav-container:before {
+    left: auto;
+    right: 0;
+}
+
+.for-desktop .header__nav-container a[href*="supplier"] {
+    display: flex;
+}
+
+.for-desktop .header__nav-container a[href*="supplier"]:before {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+.header__nav-button {
+    margin-left: 2rem;
+    margin-right: auto;
+}
+
+.for-mobile .header__nav-container {
+    left: 0;
+    right: auto;
+    transform: translateX(-100%);
+}
+
+/* #endregion */
+/* #region - site-main */
+/* #endregion */
+/* #region - site-footer */
+
+.footer__links ul li a {
+    margin-left: 4rem;
+    margin-right: 0;
+}
+
+.footer__links ul li a:after {
+    transform-origin: right;
+}
+
+.footer__copyright {
+    margin-left: 0;
+    margin-right: 4rem;
+}
+
+/* #endregion */
+/* #region - page-home */
+
+.hero__social {
+    left: 3rem;
+    right: auto;
+    margin-top: -17rem;
+}
+
+.hero__social-title {
+    direction: ltr;
+}
+
+.hero__social-title span {
+    transform: rotate(-90deg) translate(2rem, 0);
+    transform-origin: bottom left;
+}
+
+.media__header:after,
+.urban__header:after,
+.events__header:after,
+.entertainment__header:after {
+    left: auto;
+    right: 0;
+}
+
+.media__content:before,
+.urban__content:before,
+.events__content:before,
+.entertainment__content:before {
+    left: 0;
+    right: auto;
+}
+
+.media__tab-content-excerpt,
+.urban__tab-content-excerpt,
+.events__tab-content-excerpt,
+.entertainment__tab-content-excerpt {
+    margin-left: 3rem;
+    margin-right: 0;
+}
+
+.media__tab-content-excerpt a:after,
+.urban__tab-content-excerpt a:after,
+.events__tab-content-excerpt a:after,
+.entertainment__tab-content-excerpt a:after {
+    transform-origin: right;
+}
+
+.media__tab-content-excerpt a>i,
+.urban__tab-content-excerpt a>i,
+.events__tab-content-excerpt a>i,
+.entertainment__tab-content-excerpt a>i {
+    margin-left: 0;
+    margin-right: 1rem;
+    transform: scaleX(-1);
+}
+
+.media__tab:after,
+.urban__tab:after,
+.events__tab:after,
+.entertainment__tab:after {
+    transform-origin: right;
+}
+
+.ue__title {
+    margin-left: 6rem;
+    margin-right: 0;
+}
+
+.ue__link:after {
+    transform-origin: right;
+}
+
+.ue__link>i {
+    margin-left: 0;
+    margin-right: 1rem;
+    transform: scaleX(-1);
+}
+
+.ue__post:after {
+    left: auto;
+    right: 0;
+    transform-origin: right;
+}
+
+.contact__form .wpcf7-list-item-label {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.contact__form .wpcf7-list-item-label:before {
+    margin-left: .5rem;
+    margin-right: 0;
+}
+
+.contact__form input[type="text"],
+.contact__form input[type="email"],
+.contact__form textarea {
+    text-align: right;
+}
+
+.contact__form-submit {
+    justify-content: flex-end;
+}
+
+.contact__form input[type="submit"] {
+    padding-left: 3rem;
+    padding-right: 0;
+}
+
+.contact__form-submit>div:before {
+    transform-origin: right;
+}
+
+.contact__form-submit>div:after {
+    content: '\f060';
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+}
+
+.contact__form .wpcf7 .ajax-loader {
+    left: -4rem;
+    right: auto;
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+/* #endregion */
+/* #region - page-elan-group */
+
+.about__text {
+    padding-left: 4rem;
+    padding-right: 0;
+}
+
+.about__title:after {
+    left: 0;
+    right: calc(-100% + 10rem);
+}
+
+.about__description {
+    padding-left: 0;
+    padding-right: 14rem;
+}
+
+.about__image {
+    left: 0;
+    right: auto;
+}
+
+.create__title:after {
+    left: auto;
+    right: calc(-100% - 4rem);
+}
+
+.team__title:after {
+    left: auto;
+    right: calc(-100% + 10rem);
+}
+
+.team__member-name a:after {
+    transform-origin: right;
+}
+
+.partners__title:after {
+    left: auto;
+    right: calc(-100% + 10rem);
+}
+
+.partners__description {
+    padding-left: 0;
+    padding-right: 14rem;
+}
+
+.partners__content {
+    padding-left: 0;
+    padding-right: 14rem;
+}
+
+.partners__item-image {
+    margin-left: 4rem;
+    margin-right: 0;
+}
+
+.partners__item-text a:after {
+    transform-origin: right;
+}
+
+.partners__item-text a>i {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+/* #endregion */
+/* #region - media, urban, events, entertainment */
+
+.media-subhero__section:before,
+.urban-subhero__section:before,
+.events-subhero__section:before,
+.entertainment-subhero__section:before {
+    left: 0;
+    right: auto;
+}
+
+.media-subhero__image,
+.urban-subhero__image,
+.events-subhero__image,
+.entertainment-subhero__image {
+    margin-left: 10rem;
+    margin-right: 0;
+}
+
+.media-subhero__link:after,
+.urban-subhero__link:after,
+.events-subhero__link:after,
+.entertainment-subhero__link:after {
+    transform-origin: right;
+}
+
+.media-subhero__link>i,
+.urban-subhero__link>i,
+.events-subhero__link>i,
+.entertainment-subhero__link>i {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+.masonry-more:after {
+    transform-origin: right;
+}
+
+.masonry-more>i {
+    margin-left: 0;
+    margin-right: 1rem;
+    transform: scaleX(-1);
+}
+
+.ue-all__tab {
+    margin-left: 4rem;
+    margin-right: 0;
+}
+
+.ue-all__post:after {
+    transform-origin: right;
+}
+
+.ue-all__posts-more:after {
+    transform-origin: right;
+}
+
+.ue-all__posts-more>i {
+    margin-left: 0;
+    margin-right: 1rem;
+    transform: scaleX(-1);
+}
+
+.media__post-link a>i,
+.urban__post-link a>i,
+.events__post-link a>i {
+    margin-left: 0;
+    margin-right: .5rem;
+    transform: scaleX(-1);
+}
+
+.media__post-link:before,
+.urban__post-link:before,
+.events__post-link:before {
+    transform-origin: right;
+}
+
+.entertainment__post-image {
+    margin-left: 8rem;
+    margin-right: 0;
+}
+
+.entertainment__posts-more:after {
+    transform-origin: right;
+}
+
+.entertainment__posts-more>i {
+    margin-left: 0;
+    margin-right: 1rem;
+    transform: scaleX(-1);
+}
+
+/* #endregion */
+/* #region - elan single */
+
+.elan-single__image,
+.team-single__image {
+    left: auto;
+    right: 0;
+}
+
+.elan-single__text,
+.team-single__text {
+    left: 0;
+    right: 50%;
+    padding-left: 0;
+    padding-right: 4rem;
+}
+
+.elan-single__subhead:after {
+    left: auto;
+    right: calc(-100% + 8rem);
+}
+
+.elan-single__link {
+    margin-left: 2rem;
+    margin-right: 0;
+}
+
+.elan-single__link>i {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+.elan-single__file a>i {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+/* #endregion */
+/* #region - company news */
+
+.news__title:after,
+.mr__title:after,
+.cs__title:after,
+.gallery__title:after {
+    left: auto;
+    right: calc(-100% + 10rem);
+}
+
+.news__post-image,
+.mr__post-image,
+.cs__post-image {
+    margin-left: 3rem;
+    margin-right: 0;
+}
+
+.news__pagination .wp-pagenavi i,
+.mr__pagination .wp-pagenavi i,
+.cs__pagination .wp-pagenavi i {
+    transform: scaleX(-1);
+}
+
+.news__post-file a>i,
+.mr__post-file a>i,
+.cs__post-file a>i {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+.gallery__text {
+    padding-left: 4rem;
+    padding-right: 0;
+}
+
+.gallery__more:after {
+    transform-origin: right;
+}
+
+.gallery__more>i {
+    margin-left: 0;
+    margin-right: 1rem;
+    transform: scaleX(-1);
+}
+
+.block__file a>i {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+/* #endregion */
+/* #region - single */
+
+.single__related-posts:after {
+    left: auto;
+    right: 0;
+}
+
+.single__related-post-image {
+    margin-left: 2rem;
+    margin-right: 0;
+}
+
+.single__related-post-more:after {
+    transform-origin: right;
+}
+
+.single__related-post-more>i {
+    margin-left: 0;
+    margin-right: 1rem;
+    transform: scaleX(-1);
+}
+
+.single__post-image {
+    margin-left: 3rem;
+    margin-right: 0;
+    float: right;
+}
+
+.post-formatted blockquote {
+    border-left: 0;
+    border-right: .5rem solid #2574BB;
+    padding-left: 0;
+    padding-right: 2rem;
+}
+
+.single__post-back>i {
+    margin-left: 1rem;
+    margin-right: 0;
+    transform: scaleX(-1);
+}
+
+.single__post-back:after {
+    transform-origin: right;
+}
+
+/* #endregion */
+/* #region - careers */
+
+.career__title:after,
+.job__title:after {
+    left: auto;
+    right: calc(-100% + 10rem);
+}
+
+.career__image {
+    margin-left: 4rem;
+    margin-right: 0;
+}
+
+/* #endregion */
+/* #region - sitemap */
+
+.sitemap__title:after {
+    left: auto;
+    right: calc(-100% + 10rem);
+}
+
+.sitemap__column-links {
+    padding-left: 0;
+    padding-right: 3rem;
+}
+
+/* #endregion */
+/* #region - error */
+/* #endregion */
+/* #region - swipebox */
+
+#swipebox-prev,
+#swipebox-next {
+    transform: scaleX(-1);
+}
+
+#swipebox-close {
+    left: 0;
+    right: auto;
+}
+
+/* #endregion */
+
+@media (max-width: 1920px) {}
+
+@media (max-width: 1680px) {}
+
+@media (max-width: 1440px) {}
+
+@media (max-width: 1280px) {
+
+    .sitemap__column-links {
+        padding-right: 0;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .about__text {
+        padding: 0;
+    }
+
+    .entertainment__post-image {
+        margin-left: 4rem;
+    }
+
+    .elan-single__text,
+    .team-single__text {
+        right: 0;
+        padding: 0;
+    }
+
+    .single__related-post-image {
+        margin-left: 0;
+    }
+
+    .career__image {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .footer__links ul li a {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .footer__copyright {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .about__description,
+    .create__description,
+    .partners__description,
+    .partners__content {
+        padding-right: 8rem;
+    }
+
+    .about__title:after,
+    .create__title:after,
+    .team__title:after,
+    .partners__title:after {
+        right: calc(-100% + 4rem);
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    .partners__item-image {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 575px) {}
+
+@media (max-width: 480px) {
+
+    .about__description,
+    .create__description,
+    .partners__description,
+    .partners__content {
+        padding-right: 6rem;
+    }
+
+}
+
+@media (max-width: 360px) {}

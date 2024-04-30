@@ -1,0 +1,12 @@
+// $('#commercialRegistration').datepicker();
+// $('#commercialRegistration').data('datepicker');
+
+
+// $('#supplierEstablishment').datepicker();
+// $('#tax-card-issue').datepicker();
+// $('#tax-card-expiry-date').datepicker();
+
+
+// $('#supplierEstablishment').data('datepicker')
+// $('#tax-card-issue').data('datepicker')
+// $('#tax-card-expiry-date').data('datepicker')

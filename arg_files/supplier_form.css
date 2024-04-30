@@ -1,0 +1,73 @@
+.supplier-form{
+	width: 40%;
+	margin: auto;
+}
+
+.add-category{
+	display: block;
+	padding: 5px;
+	background-color: #181818;
+	color: #f1f1f1;
+	width: 40%;
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.grid-2{
+	position: relative;
+}
+
+.grid-2 a.removeSelect{
+	background: #E27F26;
+    position: absolute;
+    top: -15px;
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.grid-2 select{
+	width: 71%;
+    height: 35px;
+    border: 1px solid #ccc;
+    background: none;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    -webkit-border-radius: 0;
+}
+
+
+input[type="date"]{
+	width: 71%;
+}
+
+#expiry-date-commercial-registration-error, #start-date-supplier-establishment-error, #issue-date-error, #expiry-date-error{
+	color: #D5000E;
+}
+
+.error{
+	color: #D5000E;
+}
+
+@media only screen and (max-width: 600px) {
+	.supplier-form {
+		width: 85%;
+		margin: auto;
+	}
+	input{
+		width: 100%;
+		border: 1px solid #ccc;
+	}
+	h3 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-top: 2.7rem;
+    margin-bottom: 3rem;
+}
+}
