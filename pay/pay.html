@@ -171,68 +171,69 @@
         </form>
     </div>
     <script>
-       document.addEventListener('DOMContentLoaded', function () {
-            loadFormData(); // Load form data when the page loads
+      <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        loadFormData(); // Load form data when the page loads
 
-            // Save form data and show message when the form is submitted
-            document.getElementById('myForm').addEventListener('submit', function (event) {
-                event.preventDefault();
-                saveFormData();
-                // Reset form after submission
-                document.getElementById('myForm').reset();
-            });
+        // Save form data and show message when the form is submitted
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            saveFormData();
+            // Reset form after submission
+            document.getElementById('myForm').reset();
         });
+    });
 
-        // Function to save form data to local storage
-        function saveFormData() {
-            let formDataArray = JSON.parse(localStorage.getItem('formData'));
-            if (!Array.isArray(formDataArray)) {
-                formDataArray = [];
-            }
-            const formData = {
-                name: document.getElementById('name').value,
-                number: document.getElementById('number').value,
-                address: document.getElementById('address').value
+    // Function to save form data to local storage
+    function saveFormData() {
+        let formDataArray = JSON.parse(localStorage.getItem('formData'));
+        if (!Array.isArray(formDataArray)) {
+            formDataArray = [];
+        }
+        const formData = {
+            name: document.getElementById('name').value,
+            number: document.getElementById('number').value,
+            address: document.getElementById('address').value
+        };
+        formDataArray.push(formData);
+        localStorage.setItem('formData', JSON.stringify(formDataArray));
+        showMessage('Form Data Is Being Saved !');
+    }
+
+    // Function to load form data from local storage
+    function loadFormData() {
+        const formDataArray = JSON.parse(localStorage.getItem('formData')) || [];
+        if (formDataArray.length > 0) {
+            const lastFormData = formDataArray[formDataArray.length - 1];
+            document.getElementById('name').value = lastFormData.name;
+            document.getElementById('number').value = lastFormData.number;
+            document.getElementById('address').value = lastFormData.address;
+        }
+    }
+
+    // Function to show message with close button
+    function showMessage(message) {
+        const messageElement = document.getElementById('message');
+        if (messageElement) {
+            messageElement.textContent = message;
+            messageElement.style.display = 'block'; // Show the message
+
+            // Create close button
+            const closeButton = document.createElement('button');
+            closeButton.textContent = 'x';
+            closeButton.className = 'closeButton'; // Add class for styling
+            closeButton.onclick = function() {
+                messageElement.textContent = '';
+                messageElement.style.display = 'none'; // Hide the message
             };
-            formDataArray.push(formData);
-            localStorage.setItem('formData', JSON.stringify(formDataArray));
-            showMessage('Form Data Is Being Saved !');
+
+            // Append close button to message
+            messageElement.appendChild(closeButton);
+        } else {
+            console.error("Element with id 'message' not found.");
         }
-
-        // Function to load form data from local storage
-        function loadFormData() {
-            const formDataArray = JSON.parse(localStorage.getItem('formData')) || [];
-            if (formDataArray.length > 0) {
-                const lastFormData = formDataArray[formDataArray.length - 1];
-                document.getElementById('name').value = lastFormData.name;
-                document.getElementById('number').value = lastFormData.number;
-                document.getElementById('address').value = lastFormData.address;
-            }
-        }
-
-        // Function to show message with close button
-        function showMessage(message) {
-            const messageElement = document.getElementById('message');
-            if (messageElement) {
-                messageElement.textContent = message;
-                messageElement.style.display = 'block'; // Show the message
-
-                // Create close button
-                const closeButton = document.createElement('button');
-                closeButton.textContent = 'x';
-                closeButton.className = 'closeButton'; // Add class for styling
-                closeButton.onclick = function () {
-                    messageElement.textContent = '';
-                    messageElement.style.display = 'none'; // Hide the message
-                };
-
-                // Append close button to message
-                messageElement.appendChild(closeButton);
-            } else {
-                console.error("Element with id 'message' not found.");
-            }
-        }
-
+    }
+</script>
 
     </script>
 </body>
