@@ -67,7 +67,7 @@ header {
 .music {
     border-radius: 40px;
     float: inline-end;
-    left: 80%;
+    right: 5px;
     top: 2%;
 }
 
@@ -470,7 +470,7 @@ header {
     border-radius: 20px;
     position: absolute;
     top: 200px;
-    left: 80%;
+    right: 0;
     /* Place iframe on the very right */
     width: 300px;
     height: 96%;
@@ -539,12 +539,13 @@ button {
 #me {
     position: sticky;
     margin-bottom: 0%;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-top: 0;
     right: 0%;
-    margin-right: 75%;
+    margin-right: 77%;
     z-index: 999;
     padding: 10px 10px;
+
     background-color: #3b332b;
 }
 
@@ -930,21 +931,25 @@ nav
 /*list*/
 .instructions {
     margin-left: 0;
-    height: 50%;
-    width: 50%;
 }
 
 .instructions ul {
     color: black;
+    /* Set text color to black */
     list-style-type: disc;
+    /* Use circular bullets */
 }
 
 .instructions ul ul {
     list-style-type: circle;
+    /* Use circle bullets for nested lists */
 }
 
 .instructions h2 {
     color: black;
+    /* Set title color to black */
     font-size: 20px;
+    /* Adjust font size */
     margin-bottom: 10px;
+    /* Add margin below the title */
 }
