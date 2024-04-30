@@ -46,7 +46,6 @@ header {
 .head p {
     bottom: 0%;
     color: #121212;
-    /*transition: transform 0.3s ease;*/
 }
 
 .head :hover {
@@ -731,27 +730,23 @@ nav
 .instructions {
     margin-left: 55%;
     background-color: #ccc;
+    height: 50%;
+    width: 50%;
 }
 
 .instructions ul {
     color: black;
-    /* Set text color to black */
     list-style-type: disc;
-    /* Use circular bullets */
     margin-left: 2%;
 
 }
 
 .instructions ul ul {
     list-style-type: circle;
-    /* Use circle bullets for nested lists */
 }
 
 .instructions h2 {
     color: black;
-    /* Set title color to black */
     font-size: 20px;
-    /* Adjust font size */
     margin-bottom: 10px;
-    /* Add margin below the title */
 }
