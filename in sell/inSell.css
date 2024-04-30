@@ -931,6 +931,8 @@ nav
 /*list*/
 .instructions {
     margin-left: 0;
+    height: 50%;
+    width: 50%;
 }
 
 .instructions ul {
