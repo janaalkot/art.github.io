@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ART.h</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+
+<body>
+  <script src="search.js"></script>
+  <nav class="nav_">
+    <div class="navTop">
+        <div class="navItem"><!--menu-->
+            <label for="nav-toggle">
+                <input type="checkbox" id="nav-toggle">
+                <div class="toggle">
+                    <span class="top_line common"></span>
+                    <span class="middel_line common"></span>
+                    <span class="bottom_line common"></span>
+                </div>
+                <div class="layers">
+                    <h1>Menu</h1>
+                    <ul><!--here to link the pages-->
+                        <li><a href="index.html"><i class="fas fa-solid fa-house"></i>Main</a></li>
+                        <li><a href="amira.html"><i class="fas fa-solid fa-monument"></i>Statues</a></li>
+                        <li><a href="architecture.html"><i class="fas fa-solid fa-vihara"></i>Architecture </a></li>
+                        <li><a href=""><i class="fas fa-solid fa-photo-film"></i>Media</a></li>
+                        <li><a href="museum.html"><i class="fas fa-solid fa-landmark"></i>Museums</a></li>
+                        <li><a href=""><i class="fas fa-solid fa-headphones"></i> listen to</a></li>
+                        <li><a href="team.html"><i class="fas fa-regular fa-calendar-days"></i>Events</a></li>
+                        <li><a href="LearnToArt.htm"><i class="fas fa-brands fa-leanpub"></i>learn to ART</a></li>
+                        <li><a href=""><i class="fas fa-solid fa-palette"></i>Paintings</a></li>
+                        <li><a href="inSell.html"><i class="fas fa-solid fa-cart-arrow-down"></i>in sell</a></li>
+                        <li><a href="JewelleryTheme1.html"><i class="fas fa-solid fa-gem"></i>Jewellery</a></li>
+                        <li><a href="ContactUsTheme1.html"><i class="fas fa-solid fa-address-book"></i>Contact us</a></li>
+                    </ul>
+                </div>
+            </label>
+        </div>
+        <div class="navItem"><!--logo-->
+            <a href="index.html"><img src="img/logo.png" width ="150" height="100" alt="logo" ></a>
+        </div>
+        <script src="search.js"></script>
+            
+            <div class="navItem"><!--search bar-->
+                <div class="find">
+                <input type="text" placeholder="search..." class="searchInput" onkeyup="onKeyUp()">
+                <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+        <div class="navItem"><!--log button-->
+            <a href="log.html"><button class="log" onclick="openLog()">LOG IN</button></a>
+            <button id="themeSwitcher">Switch Theme</button>
+
+        </div>
+    </div>
+
+    
+    <!--<div class="navBottom"><!--menu buttons-->
+        <!--<a href="stat.html"><button class="menuItem" id="item1">STATUES</button></a>
+        <a href="#"><button class="menuItem" id="item2">ARCHITECTURE</button></a>
+        <a href="#"><button class="menuItem" id="item3">MUSEUMS</button></a>
+        <a href="#"><button class="menuItem" id="item4">JEWELLERY</button></a>
+        <a href="#"><button class="menuItem" id="item5">PANELS</button></a>
+        <a href="#"><button class="menuItem" id="item6">IN SELL</button></a>
+        <a href="#"><button class="menuItem" id="item7">ABOUT US</button></a>
+    </div>-->
+    <ul class="products"><!--WE NEED TO ADD MOST OF PRODUCTS NAME HERE-->
+        <li><a href="#">ARCHITECTURE</a></li>
+        <li><a href="#">MUSEUMS</a></li>
+        <li><a href="#">JEWELLERY</a></li>
+        <li><a href="#">PANELS</a></li>
+        <li><a href="#">IN SELL</a></li>
+        <li><a href="#">STARE NIGHT</a></li>
+        <li><a href="#">MONALISA</a></li>
+    </ul>
+</nav>
+  <section class="main">
+    <div class="image-container">
+    </div>
+    <p class="head">
+      <br> Architecture
+      Delve deeper into the world of architecture with in-depth sights.
+    </p>
+  </section>
+  <div class="head2">
+    <p class="para">
+      Great buildings that move the spirit have always been rare. In every case they are unique, poetic, products of the
+      heart. Arthur Erickson.
+    </p>
+    <h2 class="qoute">
+      Daniel Kindles
+    </h2>
+  </div>
+  <div class="container">
+    <img class="hassan" src="download.webp" alt="Nor el-din">
+    <table class="info-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Dborn</th>
+          <th>Nationality</th>
+          <th>Occupation</th>
+          <th>Buildings</th>
+          <th>Awards</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hassan Fathy</td>
+          <td>March 23, 1900 Alexandria, Egypt</td>
+          <td>November 30, 1989 (aged 89) Cairo, Egypt</td>
+          <td>Architecture</td>
+          <td>New Qurna</td>
+          <td>
+            Aga Khan Chairman's Award for Architecture (1980)<br>
+            Balzan Prize (1980)[1]<br>
+            Right Livelihood Award (1980)<br>
+            UIA Gold Medal (1984)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="para2">
+    A great architect who adopted the philosophy of constructing architecture with environmentally friendly materials,
+    and one of his most prominent projects is the “Qurna” village in Luxor, a project for which he received the State
+    Encouragement Award for Fine Arts and a gold medal. He is the great architect Hassan Fathy, who passed away on this
+    day, November 30. Since 1989 AD.
+    He was born in Alexandria Governorate, then moved with his family at the age of 8 to reside in Cairo. He was a
+    student of the University of Cairo, and later worked as a civil engineer. He was also a He obtained a diploma in
+    architecture from the Engineer Khanate at Fouad I University, Cairo, in 1926.
+  </p>
+  <div class="slider">
+    <div class="slides">
+      <img class="slide" src="slides/g1.jpg" alt="Slide 1">
+      <img class="slide" src="slides/g2.jpg" alt="Slide 2">
+      <img class="slide" src="slides/g3.jpg" alt="Slide 3">
+      <img class="slide" src="slides/g4.jpg" alt="Slide 4">
+      <img class="slide" src="slides/g5.jpg" alt="Slide 5">
+      <img class="slide" src="slides/g6.jpg" alt="Slide 6">
+      <img class="slide" src="slides/g7.jpg" alt="Slide 7">
+      <img class="slide" src="slides/g8.jpg" alt="Slide 8">
+      <img class="slide" src="slides/g9.jpg" alt="Slide 9">
+      <img class="slide" src="slides/g10.jpg" alt="Slide 10">
+    </div>
+    <button class="back" onclick="prevSlide()">
+      <i class="fa fa-arrow-left" style="font-size: 30px;"></i>
+    </button>
+    <button class="fow" onclick="nextSlide()">
+      <i class="fa fa-arrow-right" style="font-size: 30px;"></i>
+    </button>
+  </div>
+  <div class="line">
+    <hr>
+  </div>
+  <div class="container">
+    <img class="nor" src="أحمد_بن_طولون.png" alt="Ahmed bn Tolon">
+    <table class="info-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Born</th>
+          <th>Nationality</th>
+          <th>Occupation</th>
+          <th>Buildings</th>
+          <th>Awards</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ahmed bn Tolon</td>
+          <td>20 September 835 · (23rd Ramadan, 220 AH) · Baghdad</td>
+          <td>Azjur al-Turki</td>
+          <td>Architect</td>
+          <td>Ahmed bn Tolon mosque</td>
+          <td>----</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="slider">
+    <div class="slides2">
+      <img class="slide" src="images2/m2.jfif" alt="Slide 1">
+      <img class="slide" src="images2/m3.jfif" alt="Slide 2">
+      <img class="slide" src="images2/m4.jfif" alt="Slide 3">
+      <img class="slide" src="images2/m4.jfif" alt="Slide 4">
+      <img class="slide" src="images2/m5.jfif" alt="Slide 5">
+      <img class="slide" src="images2/m6.jfif" alt="Slide 6">
+      <img class="slide" src="images2/m7.jfif" alt="Slide 7">
+    </div>
+   
+    <iframe class="frame"src="/default.asp" width="100%" height="300" style="border:1px solid black;">
+    </iframe>
+    <button class="back" onclick="prevSlide2()">
+      <i class="fa fa-arrow-left" style="font-size: 30px;"></i>
+    </button>
+    <button class="fow" onclick="nextSlide2()">
+      <i class="fa fa-arrow-right" style="font-size: 30px;"></i>
+    </button>
+  </div>
+  <div class="line">
+    <hr>
+  </div>
+  <h1 class="head3">Ahmed abn tolon</h1>
+
+  <p class="para3">
+
+    Ahmed bn Tolon was a great architect who adopted the philosophy of constructing architecture with environmentally
+    friendly materials, and one of his most prominent projects is the “Qurna” village in Luxor, a project for which he
+    received the State Encouragement Award for Fine Arts and a gold medal. He is the great architect Hassan Fathy, who
+    passed away on this day, November 30. Since 1989 AD.
+    He was born in Alexandria Governorate, then moved with his family at the age of 8 to reside in Cairo. He was a
+    student of the University of Cairo, and later worked as a civil engineer. He was also a He obtained a diploma in
+    architecture from the Engineer Khanate at Fouad I University, Cairo, in 1926.
+  </p>
+  <style>
+    .footer
+{
+    background-color: var(--blue);
+    padding: 70px 0;
+}
+.footer-container
+{
+    max-width: 1170px;
+    background-color: var(--blue);
+    margin: auto;
+}
+ul
+{
+    list-style: none;
+}
+.footer-col
+{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col h4
+{
+    font-size: 18px;
+    color: var(--white);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500px;
+    position: relative;
+}
+.footer-col h4 ::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--white);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+.footer-col ul li a
+{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover/*moving transition*/
+{
+    color: var(--grey);
+    padding-left: 10px;
+}
+.footer-col .social-links a/*original */
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--darkgrey);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--white);
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover/*after effect*/
+{
+    color: var(--darkgrey);
+    background-color: var(--white);
+}
+
+ </style>
+ <footer class="footer"><!--footer-->
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
+</html>

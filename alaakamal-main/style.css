@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "poppins", sans-serif;
+}
+:root
+{
+    --grey :#c7ad96;
+    --blue :#3b332b;
+    --darkblue :#3b332b;
+    --darkgrey :#7a5e41;
+    --white : #F5F5F5;
+
+}
+/* Add this CSS to your style.css file */
+/* Remove blue color and underline from all links */
+a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Style for hover state of links */
+a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+
+body {
+  background-image: url("images2/back/download (1).jfif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.head {
+  background-color: #f2f2f2;
+  width: 50%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  border-radius: 10px #eeded3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #452916;
+
+}
+
+nav/*top bar*/
+{
+background-color: var(--darkblue);
+color: var(--white);
+padding: 20px 40px;
+position: fixed;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.navTop
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.layers
+{
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    background-color: var(--darkblue);
+    transition: 0.5s ease;
+    transform: translateX(-150%);
+    padding-bottom: 550px; /* Added to create the illusion of 100% height */
+}
+.layers h1
+{
+    color: var(--white);
+    font-weight: 800;
+    text-align: right;
+    padding: 5px 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+.layers ul li
+{
+    list-style: none;
+}
+.layers ul li a
+{
+    color: var(--white);
+    background-color: var(--darkblue);
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    
+}
+.layers ul li a:hover
+{
+    background-color: var(--grey);
+    color: var(--blue);
+}
+.layers ul li a i
+{
+    width: 40px;
+    text-align: center;
+}
+.navItem {
+    position: relative;
+}
+
+
+.toggle {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background-color: var(--white);
+    cursor: pointer;
+    border-radius: 2px;
+    top: 2px;
+    left: 15px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: var(--darkblue);
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--darkblue);
+}
+
+.toggle .middel_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--darkblue);
+}
+
+.toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--darkblue);
+}
+
+.navItem input[type="checkbox"] {
+    display: none;
+}
+.navItem input:checked ~ .toggle .top_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+.navItem input:checked ~ .toggle .bottom_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+.navItem input:checked ~ .toggle .middel_line {
+    opacity: 0;
+    transform: translateX(20px)
+}
+
+.navItem input:checked ~ .layers {
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.find/*search bar*/
+{
+    display: flex;
+    align-items: center;
+    background-color: var(--grey);
+    padding: 7px 20px;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+.searchInput
+{
+    border: none;
+    color: var(--darkblue);
+    background-color: var(--white);
+}
+.navItem button /*log in button*/
+{
+    font-size: 20px;
+    border-bottom: 2px solid  var(--white);
+    cursor: pointer;
+    background-color:transparent;
+    color: var(--white);
+    border-radius: 10%;
+}
+.navBottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.products {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none; /* Hide the products block by default */
+}
+
+
+.products li a {
+  border: 1px solid ; 
+  margin-top: -1px; 
+  background-color: var(--white);
+  padding: 12px; 
+  text-decoration: none; 
+  font-size: 15px; 
+  color: var(--darkgrey); 
+  display: block; 
+}
+
+.products li a:hover:not(.header) {
+  background-color: var(--grey); 
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  /* Stretch full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #C38D3B;
+  min-height: 20vh;
+}
+
+.image-container {
+  width: 390px;
+  /* Width of the image */
+  height: 390px;
+  /* Height of the image */
+  border: 10px solid #c9ad82;
+  /* Border style */
+  background-image: url("images2/back/30241987569.png");
+  background-position: center;
+  background-size: cover;
+  /* Cover the entire background */
+  background-repeat: no-repeat;
+}
+
+
+
+.para {
+  padding: 20px;
+  font-size: 30px;
+  font-family: 10px;
+  border: solid 27px #c0a572;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: #c9ad82;
+}
+
+.head {
+  padding-bottom: 300px;
+  padding-right: 20px;
+}
+
+.qoute {
+  padding-left: 100px;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #181716;
+}
+
+.head2 {
+
+  padding-top: 14px;
+  padding: 30px;
+  align-items: center;
+
+}
+
+img.hassan {
+  background-image: 300px #c9ad82;
+}
+
+.h3 {
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size-adjust: 5px;
+}
+
+.para2,
+.para3 {
+  padding: 30px;
+  font-size: 20px;
+  font-weight: 10px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  /* Add some padding for extra space */
+}
+
+.container {
+  display: flex;
+  /* Enable flexbox layout for side-by-side arrangement */
+  align-items: center;
+  /* Vertically align image and table */
+  margin: 25px 0px;
+  /* Adjust vertical margin as needed */
+  max-width: 700px;
+  height: auto;
+}
+
+.info-table {
+  border-collapse: collapse;
+  margin: 0 10px;
+  /* Add some margin between image and table */
+  border: 1px solid #c5a66d;
+  border-radius: 5px;
+}
+
+th,
+td {
+  border: 1px solid #341818;
+  padding: 5px;
+  text-align: left;
+}
+
+th {
+  background-color: #c9ad82;
+  font-weight: bold;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides,
+.slides2 {
+  text-align: center;
+  /* Center the images horizontally */
+}
+
+.slides img,
+.slides2 img {
+  padding: 0 5px;
+  /* Adjust padding as needed */
+  max-width: 30%;
+  /* Reduce maximum width for smaller images */
+  border: 20px outset #c9ad82;
+  /* Adjust border style and color */
+}
+
+.slide {
+  display: none;
+  /* Hide all slides initially */
+}
+
+img.displayslide {
+  display: block;
+  /* Show the slide with the 'displayslide' class */
+  margin: 0 auto;
+  /* Center the image horizontally */
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: whitesmoke;
+  color: wheat;
+  font-size: 1.5rem;
+  /* Reduce button font size for smaller screens */
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  /* Adjust padding as needed */
+}
+
+.slider button.back {
+  right: 0;
+}
+
+.slider button.fow {
+  left: 0;
+}
+
+hr {
+  border: 8px solid wheat;
+  /* Change color and thickness as desired */
+}
+
+.para2,
+.para3 {
+  font-size: 30px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: Almarai, "sans-serif";
+  /* Add more styles as needed */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 700px) {
+  .slider button {
+    font-size: 1.2rem;
+    /* Further reduce font size for smaller screens */
+  }
+}
+
+.head3 {
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size-adjust: 5px;
+  font-style: bold;
+}
+
+
+
+
+
+/* Styles for the slider container */
+
+hr {
+  border: 8px solid wheat;
+  /* Change color and thickness as desired */
+  width: 50%;
+  /* Adjust width as needed */
+  margin: 10px auto;
+  /* Add margin for spacing */
+}
