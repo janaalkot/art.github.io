@@ -1,0 +1,590 @@
+
+@import url('https://fonts.googleapis.com/2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0//font-awesome.min.");
+.mustafa {
+ 
+  background-color: var(--whitesmoke);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "poppins", sans-serif;
+}
+:root{
+  
+  --grey :#e2e8f5;
+  --blue :#0d4683;
+  --darkblue :#13448a;
+  --darkgrey :#aebbcc;
+  --white : #F5F5F5;
+  --orange: #e04204;
+  --primary-color: #aeddf7; /* Bright blue */
+ --whitesmoke:#c9daec;
+ --text:black;
+ --head:#f2ebc1db;
+  
+  /* Font variables */
+  --font-primary:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-secondary: 'Arial', sans-serif;
+  --font-size-base: 16px;
+  --font-size-large: 24px;
+  --background-image: url("C:\Users\dell\Documents\GitHub\project1\alaakamal-main\images2\download (4).jfif");}
+
+.dark-theme{
+  
+  --grey:#d7ce9bdb;
+  --darkblue :#3b332b;
+  --white : #F5F5F5;
+  --orange:#f1ece1db;
+
+  --primary-color:#ded1bc; /* Bright blue */
+  --whitesmoke: rgb(231, 219, 197);
+  --text:black;
+  --head:#f9f2cce2;
+
+}
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--primary-color);
+}.item {
+  flex-basis: calc(50% - 10px); /* Adjusted to make space for text */
+  display: flex; /* Added to make text appear next to the photo */
+}
+.item img {
+  width: 200%; /* Set the width to 200% */
+  max-width: none; /* Remove the maximum width constraint */
+  height:200px; /* Ensure the aspect ratio is maintained */
+  display: block;
+  margin-right: 10px; /* Added margin between image and text */
+}
+
+
+.item .text {
+  margin-top: 0; /* Removed margin top */
+  color: black;
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'Helvetica', sans-serif;
+  line-height: 1.5;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--primary-color);
+}
+
+.pair {
+  display: flex;
+  flex-basis: 100%;
+  padding: 0px;
+}
+
+.item {
+  flex-basis: 50%;
+   padding: 5px;
+}
+
+.item img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+   padding:6px;
+  border: 1px solid #051442;
+  border-radius:3px;
+}
+
+.item .text {
+  margin-top: 10px;
+  color: black;
+  padding: 10px;
+  font-size:18px;
+  font-family:'Helvetica', sans-serif ;
+  line-height: 1.5;
+}
+
+#podcast {
+  font-size: 2rem;
+  color: #1c1c1c;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+#podcast .mustafa img {
+  max-width: 45%;
+  height:500px;
+  float: left;
+  margin-right: 20px;
+  max-height: 5000px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+#television.mustafa {
+  background-color:var(--whitesmoke) ;
+  border: 2px solid var(--darkgrey);
+  border-radius: 20px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+#podcast .para3 {
+  max-width: calc(30% - 20px);
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.5rem;
+  padding-top: 30px;
+  overflow: auto;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 300;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:var(--whitesmoke);
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.television,
+.podcast,
+.radio {
+  width: calc(33.33% - 20px);
+  height: auto;
+  background-color:var(--grey);
+  border: 1px solid #dee5ed;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+.television img,
+.podcast img,
+.radio img {
+  width: 100%;
+  /* Ensure image fills container width */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.television a,
+.podcast a,
+.radio a {
+  display: block;
+  margin-top: 10px;
+  /* Add margin between image and text */
+}
+
+.head {
+  padding-top: 170px;
+  font-size: rem;
+  color: #000000;
+  text-align: center;
+
+}
+
+.para {
+  font-size: 2rem;
+  color: #1c1c1c;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 20px;
+   background-color: #e8eef5;
+}
+
+.sec1 {
+  font-size: 2rem;
+  color: #1c1c1c;
+  line-height: 1.5;
+  padding: 20px;
+}
+.mustafa {
+  background-color:var(--primary-color);
+  /* Set background color */
+  border: 2px solid var(--darkgrey);
+  /* Set border properties */
+  border-radius: 20px;
+  /* Add border radius for rounded corners */
+  padding: 0px;
+  /* Add padding for spacing */
+  overflow: hidden;
+  /* Clear floats */
+}
+
+.mustafa img {
+  max-width: 90%;
+  /* Set the width of the image */
+  height: auto;
+  /* Maintain aspect ratio */
+  float: left;
+  /* Float the image to the left */
+  margin-right: 20px;
+  /* Add margin for spacing between image and paragraph */
+  max-height: 500px;
+  /* Set the maximum height of the image */
+  border: 1px solid #000;
+  /* Set border properties for the image */
+  border-radius: 10px;
+  /* Add border radius for rounded corners */
+}
+.para1 {
+  max-width: calc(50% - 20px);
+  /* Set the width of the paragraph */
+  display: inline-block;
+  /* Display the paragraph as inline-block */
+  vertical-align: top;
+  /* Align the top of the paragraph with the top of the image */
+  font-size: 1.5rem;
+  padding-top: 30px;
+  overflow: auto;
+}
+
+p span {
+  display: inline-block;
+  /* Make each span element behave like a block */
+  margin-bottom: 5px;
+  /* Add bottom margin to create space between each section */
+}
+
+p strong {
+  margin-right: 5px;
+  /* Add right margin to create space between the strong tag and the text */
+}
+
+.head2 {
+  font-family: 'Arial Black', sans-serif;
+  /* Use a bold font */
+  font-size: 1.5rem;
+  /* Adjust the font size */
+  color: #2a140f;
+  /* Set the text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Add a text shadow */
+  /* Add padding for spacing */
+  background-color:var(--head);
+  /* Set background color */
+  border-radius: 3px;
+  /* Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgb(240, 240, 213, 0.1);
+  /* Add a box shadow */
+  text-align: center;
+  /* Center align the text */
+  margin:10px;
+}
+
+.para2,.para4{
+  color: #1c1c1c;
+  line-height: 1.5;
+  padding: 20px;
+  background-color:var(--whitesmoke);
+  /* Set background color */
+  /* Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgb(250, 253, 255, 0.1);
+  /* Add a box shadow */
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+.head3,.head4{
+  font-family: 'Arial Black', sans-serif;
+  /* Use a bold font */
+  font-size:20px;
+  /* Adjust the font size */
+  color: #2a140f;
+  /* Set the text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Add a text shadow */
+  /* Add padding for spacing */
+  background-color: #f3f0d3;
+  /* Set background color */
+  border-radius: 3px;
+  /* Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgb(240, 240, 213, 0.1);
+  /* Add a box shadow */
+ margin:10px;
+}
+.aud1{
+  padding-left: 10px;
+  padding-right: 10px;
+  margin:20px;
+   width: 50%;}
+.aud,.aud1 {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  padding-left:300px;
+  padding-right:285px;
+}
+/* CSS for the audio element */
+.audio1 {
+  margin-bottom: 20px;
+}
+
+/* CSS for the video element */
+.video1 {
+  margin-top: 20px;
+}
+.sec1,.pod{
+  font-family: 'Arial Black', sans-serif;
+  /* Use a bold font */
+  font-size: 1.5rem;
+  /* Adjust the font size */
+  color: #000000;
+  /* Set the text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Add a text shadow */
+  /* Add padding for spacing */
+  background-color: #dad6b9;
+  /* Set background color */
+  border-radius: 3px;
+  /* Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgb(240, 240, 213, 0.1);
+  /* Add a box shadow */
+  text-align: center;
+  /* Center align the text */
+  margin:10px;
+}
+.head6{
+  font-family: 'Arial Black', sans-serif;
+  /* Use a bold font */
+  font-size: 1.5rem;
+  /* Adjust the font size */
+  color: #2a140f;
+  /* Set the text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Add a text shadow */
+  /* Add padding for spacing */
+  background-color: #d7d3af;
+  /* Set background color */
+  border-radius:1px;
+  /* Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgb(240, 240, 213, 0.1);
+  /* Add a box shadow */
+  text-align: center;
+  /* Center align the text */
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.head {
+  background-color: #f2f2f2;
+  width: 50%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  border-radius: 10px #eeded3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: var(--secondary-color);
+
+}
+
+nav/*top bar*/
+{
+background-color: var(--darkblue);
+color: var(--white);
+padding: 20px 40px;
+position: fixed;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.navTop
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.layers
+{
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    background-color: var(--darkblue);
+    transition: 0.5s ease;
+    transform: translateX(-150%);
+    padding-bottom: 550px; /* Added to create the illusion of 100% height */
+}
+.layers h1
+{
+    color: var(--white);
+    font-weight: 800;
+    text-align: right;
+    padding: 5px 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+.layers ul li
+{
+    list-style: none;
+}
+.layers ul li a
+{
+    color: var(--white);
+    background-color: var(--darkblue);
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    
+}
+.layers ul li a:hover
+{
+    background-color: var(--grey);
+    color: var(--blue);
+}
+.layers ul li a i
+{
+    width: 40px;
+    text-align: center;
+}
+.navItem {
+    position: relative;
+}
+
+
+.toggle {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background-color: var(--white);
+    cursor: pointer;
+    border-radius: 2px;
+    top: 2px;
+    left: 15px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: var(--darkblue);
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--darkblue);
+}
+
+.toggle .middel_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--darkblue);
+}
+
+.toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--darkblue);
+}
+
+.navItem input[type="checkbox"] {
+    display: none;
+}
+.navItem input:checked ~ .toggle .top_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+.navItem input:checked ~ .toggle .bottom_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+.navItem input:checked ~ .toggle .middel_line {
+    opacity: 0;
+    transform: translateX(20px)
+}
+
+.navItem input:checked ~ .layers {
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.find/*search bar*/
+{
+    display: flex;
+    align-items: center;
+    background-color: var(--grey);
+    padding: 7px 20px;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+.searchInput
+{
+    border: none;
+    color: var(--darkblue);
+    background-color: var(--white);
+}
+.navItem button /*log in button*/
+{
+    font-size: 20px;
+    border-bottom: 2px solid  var(--white);
+    cursor: pointer;
+    background-color:transparent;
+    color: var(--white);
+    border-radius: 10%;
+}
+.navBottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.products {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none; /* Hide the products block by default */
+}
+
+
+.products li a {
+  border: 1px solid ; 
+  margin-top: -1px; 
+  background-color: var(--white);
+  padding: 12px; 
+  text-decoration: none; 
+  font-size: 15px; 
+  color: var(--darkgrey); 
+  display: block; 
+}
+
+.products li a:hover:not(.header) {
+  background-color: var(--darkblue); 
+}
