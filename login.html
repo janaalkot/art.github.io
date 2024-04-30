@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="contener">
+        <div class="form-box">
+            <h1 id="title">LOG IN</h1>
+            <form id="myForm">
+                <div class="input-group">
+                    <div class="input-field" id="emailField" >
+                        <img src="./img/email.png" width ="20" height="20" alt="" class="emailIcon">
+                        <input type="email" placeholder="Email" id="email" autocomplete="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-field" id="passwordField">
+                        <img src="img/password.png"  width ="20" height="20" alt="" class="passwordIcon">
+                        <input type="password" placeholder="Password" id="password" autocomplete="new-password" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <p>Lost password <a href="#">Click Here!</a></p>
+                </div>
+                <div class="button-field">
+                    <a href="log.html"><button type="button" id="signUpButton">SIGN UP</button></a>
+                    <button type="button" id="signInButton" class="disable">SIGN IN</button>
+                    <button type="submit" id="enter" class="enterIN">ENTER</button>
+                    <div id="welcom" style="display: none;">WELCOME BACK ;p</div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    let form = document.querySelector('#myForm');
+    const massage =document.getElementById('welcom');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        
+        let enteredEmail = document.getElementById('email').value;
+        let enteredPassword = document.getElementById('password').value;
+
+        // Retrieve email and password from local storage
+        let storedEmail = localStorage.getItem('email');
+        let storedPassword = localStorage.getItem('password');
+
+        // Check if entered email and password match the stored values
+        if (enteredEmail === storedEmail && enteredPassword === storedPassword) {
+            
+            // Both email and password are correct, open index.html
+            window.location.href = "index.html";
+            massage.style.display = "block";
+        } else {
+            // Incorrect email or password
+            console.log('Incorrect email or password');
+            // You can display an error message here if needed
+        }
+    });
+
+    // Add validation for name, email, and password
+    const inputs = form.querySelectorAll('input');
+    inputs.forEach(input => {
+        input.addEventListener('input', () => {
+            input.nextElementSibling.textContent = '';
+        });
+    });
+});
+
+    </script>
+    <script>
+        function massage(infoId) {
+            var element = document.getElementById(infoId);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>

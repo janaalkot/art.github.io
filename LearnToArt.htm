@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Art.h|Learn to Art</title>   
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+ <link rel="stylesheet" id="themeLink" href="vidsTheme1.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- navigation bar for both pages and sections in this page -->
+<ul id="navbar">
+ <li> <nav class="nav_">
+  <div class="navTop">
+      <div class="navItem"><!--menu-->
+          <label for="nav-toggle">
+              <input type="checkbox" id="nav-toggle">
+              <div class="toggle" style="left: 0; top: 0;">
+                  <span class="top_line common"></span>
+                  <span class="middel_line common"></span>
+                  <span class="bottom_line common"></span>
+              </div>
+              <div class="layers">
+                  <h1>Menu</h1>
+                  <ul style="display: flex; flex-direction: column;"><!--here to link the pages-->
+                    <li><a href="index.html"><i class="fas fa-solid fa-house"></i>Main</a></li>
+                    <li><a href="amira.html"><i class="fas fa-solid fa-monument"></i>Statues</a></li>
+                    <li><a href="architecture.html"><i class="fas fa-solid fa-vihara"></i>Architecture </a></li>
+                    <li><a href="media.html"><i class="fas fa-solid fa-photo-film"></i>Media</a></li>
+                    <li><a href="museum.html"><i class="fas fa-solid fa-landmark"></i>Museums</a></li>
+                    <li><a href="listento.html"><i class="fas fa-solid fa-headphones"></i> listen to</a></li>
+                    <li><a href="team.html"><i class="fas fa-regular fa-calendar-days"></i>Events</a></li>
+                    <li><a href="LearnToArt.htm"><i class="fa-solid fa-paintbrush"></i>learn to ART</a></li>
+                    <li><a href="ArtGallery.htm"><i class="fas fa-solid fa-palette"></i>Art Gallery</a></li>
+                    <li><a href="/in sell/inSell.html"><i class="fas fa-solid fa-cart-arrow-down"></i>in sell</a></li>
+                    <li><a href="JewelleryTheme1.html"><i class="fas fa-solid fa-gem"></i>Jewellery</a></li>
+                    <li><a href="ContactUsTheme1.html"><i class="fas fa-solid fa-address-book"></i>Contact us</a></li>
+                  </ul>
+              </div>
+          </label>
+      </div>
+      <div class="navItem"><!--logo-->
+          <a href="index.html"><img src="./img/logo.png" width ="150" height="100" alt="logo" style="background-color: transparent;"></a>
+      </div>
+      <script src="search.js"></script>
+          
+          <div class="navItem"><!--search bar-->
+              <div class="find">
+              <input type="text" placeholder="search..." class="searchInput" onkeyup="onKeyUp()">
+              <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon" style="background-color: transparent;">
+              </div>
+          </div>
+      <div class="navItem"><!--log button-->
+          <a href="log.html"><button class="log" onclick="openLog()">LOG IN</button></a>
+          <button id="themeSwitcher">Switch Theme</button>
+
+      </div>
+  </div>
+  <ul class="products"><!--WE NEED TO ADD MOST OF PRODUCTS NAME HERE-->
+    <li><a href="#">ARCHITECTURE</a></li>
+            <li><a href="museum.html">MUSEUMS</a></li>
+            <li><a href="jewellerytheme1.css">JEWELLERY</a></li>
+            <li><a href="#">PANELS</a></li>
+            <li><a href="inSell.html">IN SELL</a></li>
+            <li><a href="ArtGallery.htm">STARE NIGHT</a></li>
+            <li><a href="ArtGallery.htm">MONALISA</a></li>
+            <li><a href="inSell.html">THE JEWELARY OF FAYUM PORTRAIT</a></li>
+            <li><a href="inSell.html">GEORGAIN PASTE NECKLACE</a></li>
+            <li><a href="inSell.html">THE JEWELARY OF FAYUM PORTRAIT</a></li>
+            <li><a href="inSell.html">EGYPTIAN WOMAN WITH EGYPTIAN KERDAN</a></li>
+            <li><a href="inSell.html">BABYLON STATUE</a></li>
+            <li><a href="inSell.html">ANCIENT EGYPTIAN WRITER</a></li>
+            <li><a href="inSell.html">CAIRO'S ISLAMIC ARCHITECTURE – 7TH TO 18TH CENTURIES</a></li>
+            <li><a href="inSell.html">GRAMOPHONE</a></li>
+            <li><a href="inSell.html">EGYPTIAN FARMARS</a></li>
+            <li><a href="inSell.html">GREEK & ROMAN</a></li>
+            <li><a href="amira.html">THE STATUE OF THE AMON-RA</a></li>
+            <li><a href="amira.html">THE STATUE OF THE GRAND PIECE</a></li>
+            <li><a href="amira.html">THE STATUE OF THE WEDJA-REN-ES</a></li>
+            <li><a href="amira.html">HISTORY EGYPTIAN MAAT FEATHER</a></li>
+            <li><a href="amira.html">THE STATUE OF THE PHARAONIC</a></li>
+            <li><a href="amira.html">THE STATUE OF THE TUTANKHAMUN</a></li>
+            <li><a href="museum.html">LOUVRE MUSEUM </a></li>
+            <li><a href="museum.html">UFFIZI GALLERY</a></li>
+            <li><a href="museum.html">ISLAMIC ART MUSEUM </a></li>
+            <li><a href="museum.html">NUBIAN MUSEUM</a></li>
+            <li><a href="museum.html">BORGHESE GALLERY AND MUSEUM</a></li>
+            <li><a href="museum.html">TOKYO NATIONAL MUSEUM</a></li>
+            <li><a href="museum.html">متحف اللوفر</a></li>
+            <li><a href="museum.html">متحف غاليريا أوفيتسي </a></li>
+            <li><a href="museum.html">متحف النوبة</a></li>
+            <li><a href="museum.html">المتحف الإسلامي</a></li>
+            <li><a href="museum.html">متحف بورغيزي</a></li>
+            <li><a href="museum.html">متحف طوكيو</a></li>
+            <li><a href="LearnToArt.htm">HUMAN ANATOMY SECTION</a></li>
+            <li><a href="LearnToArt.htm">ANIMAL ANATOMY SECTION</a></li>
+            <li><a href="LearnToArt.htm">PLANT ANATOMY SECTION</a></li>
+            <li><a href="LearnToArt.htm">POINT PRESPECTIVES</a></li>
+            <li><a href="ArtGallery.htm">THE THE TOWER OF BABEL</a></li>
+            <li><a href="ArtGallery.htm">A SUNDAY ON LA GRANDE JATTE</a></li>
+            <li><a href="ArtGallery.htm">EPISODES FROM THE LIFE OF A BISHOP SAINT</a></li>
+            <li><a href="ArtGallery.htm">WORSHIPPING AMENHOTEP AND AHMOSE-NEFERTARI</a></li>
+            <li><a href="ArtGallery.htm">THE ORANGE SELLER</a></li>
+            <li><a href="ArtGallery.htm">QUEEN NEFERTARI BEING LED BY ISIS</a></li>
+            <li><a href="ArtGallery.htm">THE ANNUNCIATION</a></li>
+            <li><a href="ArtGallery.htm">Madonna Del GranDUCA</a></li>
+            <li><a href="ArtGallery.htm">TWO CROWNS</a></li>
+            <li><a href="ArtGallery.htm">tHE LAST DAY OF POMPEII</a></li>
+            <li><a href="ArtGallery.htm">THE SCREAM</a></li>
+            <li><a href="ArtGallery.htm">UNEQUAL MARRIAGE</a></li>
+</ul>
+</nav></li>   
+ <li class="sec" onclick="sectionsDisplayAndHide()">
+   Sections<span style="position: relative; top: 7px;" class="glyphicon" id="triangle">&#xe250;</span>
+   <ul id="dropdownlist">
+    <li><a href="#i">Human Anatomy Section</a></li>
+    <li><a href="#ii">Animal Anatomy Section</a></li>
+    <li><a href="#iii">Plant Anatomy Section</a></li>
+    <li><a href="#iiii">Point Prespectives Section</a></li>
+   </ul>
+ </li> 
+</ul>   
+ <h1 id="titleOfPG">Learn to Art</h1>
+ <!-- first section heading-->
+ <h2 id="i">Human Anatomy Section</h2>
+ <div class="PM">
+  <button class="left" onclick="topthreeVidsPrev()"><span class="glyphicon glyphicon-arrow-left" style="align-self: center; font-size: 40px;"></span></button>
+    <video controls class="topthree"><source src="./image/eye_anatomy.mp4" type="video/mp4"></video>
+    <video controls class="topthree"><source src="./image/nose_anatomy.mp4" type="video/mp4"></video>
+    <video controls class="topthree"><source src="./image/mouth_anatomy.mp4" type="video/mp4"></video>
+    <video controls class="topthree"><source src="./image/ear_anatomy.mp4" type="video/mp4"></video>
+    <video controls class="topthree"><source src="./image/face_anatomy.mp4" type="video/mp4"></video>
+    <video controls class="topthree"><source src="./image/hair_anatomy.mp4" type="video/mp4"></video>
+    <video controls class="topthree"><source src="./image/torso_anatomy.mp4" type="video/mp4"></video>
+    <video controls class="topthree"><source src="./image/arm_anatomy.mp4" type="video/mp4"></video>
+    <video controls class="topthree"><source src="./image/hand _anatomy.mp4" type="video/mp4"></video>
+    <video controls class="topthree"><source src="./image/leg_anatomy.mp4" type="video/mp4"></video>
+    <video controls class="topthree"><source src="./image/feet_anatomy.mp4" type="video/mp4"></video>
+    <video controls class="topthree"><source src="./image/full_anatomy.mp4" type="video/mp4"></video>
+  <button class="right" onclick="topthreeVidsNext()"><span class="glyphicon glyphicon-arrow-right" style="align-self: center; font-size: 40px;"></span></button>
+ </div>
+ <!--heading of second section-->
+ <h2 id="ii">Animal Anatomy Section</h2>
+ <div class="PS">
+  <div>
+   <video controls class="topone"><source src="./image/cat_anatomy.mp4" type="video/mp4"></video>
+   <video controls class="topone"><source src="./image/bunny_anatomy.mp4" type="video/mp4"></video>
+   <video controls class="topone"><source src="./image/bird_anatomy.mp4" type="video/mp4"></video>
+   <video controls class="topone"><source src="./image/fish_anatomy.mp4" type="video/mp4"></video>
+  </div>
+  <div class="PT">
+   <img class="topfour" src="./image/dog_anatomy.jpg">
+   <img class="topfour" src="./image/bear_anatomy.jpg">
+   <img class="topfour" src="./image/Leopard_anatomy.jpg">
+   <img class="topfour" src="./image/squirrel_anatomy.jpg">
+   <img class="topfour" src="./image/elephant_anatomy.jpg">
+   <img class="topfour" src="./image/monkey_anatomy.jpg">
+   <img class="topfour" src="./image/edeer_anatomy.jpg">
+   <img class="topfour" src="./image/Frog_ anatomy.jpg">
+   <video class="topfour" controls><source src="./image/swan_anatomy.mp4" type="video/mp4"></video>
+   <img class="topfour" src="./image/Eagle_anatomy.jpg">
+   <img class="topfour" src="./image/Peacock_anatomy.jpg">
+   <img class="topfour" src="./image/penguin_anatomy.jpg">
+   <video class="topfour" controls><source src="./image/dolphin_anatomy.mp4" type="video/mp4"></video>
+   <video class="topfour" controls><source src="./image/shark_anatomy.mp4" type="video/mp4"></video>
+   <img class="topfour" src="./image/seal_anatomy.jpg">
+   <img class="topfour" src="./image/clown_anatomy.jpg">
+  </div>
+ </div>
+ <div class="buttons">
+  <button class="back" onclick="topfiveVidsPrev()"><span class="glyphicon glyphicon-arrow-left" style="align-self: center; font-size: 70px;"></span></button>
+  <button class="forward" onclick="topfiveVidsNext()"><span class="glyphicon glyphicon-arrow-right" style="align-self: center; font-size: 70px;"></span></button>
+ </div>
+ <!--iframes-->
+ <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!must be images!!!!!!!!!!!!!!!!!!-->
+<div id="ad">
+ <iframe id="advert1" src="./image/ad_2.jpg"></iframe>
+ <iframe id="advert2" src="./image/ad_3.jpg"></iframe>
+</div>
+<!--heading of third section-->
+ <h2 id="iii">Plant Anatomy Section</h2>
+ <div class="PS">
+  <div>
+   <video controls class="bottomone"><source src="./image/plant_anatomy.mp4" type="video/mp4"></video>
+   <video controls class="bottomone"><source src="./image/flower_anatomy.mp4" type="video/mp4"></video>
+  </div>
+  <div class="PT">
+    <img class="bottomfour" src="./image/tree_petal.jpg">
+    <img class="bottomfour" src="./image/tree_trunk.jpg">
+    <img class="bottomfour" src="./image/tree_branches.jpg">
+    <img class="bottomfour" src="./image/tree.jpg">
+    <video controls class="bottomfour"><source src="./image/flower_pov.mp4" type="video/mp4"></video>
+    <video controls class="bottomfour"><source src="./image/down_flower.mp4" type="video/mp4"></video>
+    <video controls class="bottomfour"><source src="./image/breeze_flower.mp4" type="video/mp4"></video>
+    <img class="bottomfour" src="./image/flower.jpg">
+  </div>
+ </div>
+ <div class="buttons">
+  <button class="back" onclick="bottomfiveVidsPrev()"><span class="glyphicon glyphicon-arrow-left" style="align-self: center; font-size: 70px;"></span></button>
+  <button class="forward" onclick="bottomfiveVidsNext()"><span class="glyphicon glyphicon-arrow-right" style="align-self: center; font-size: 70px;"></span></button>
+ </div>
+ <!--heading of fourth section-->
+ <h2 id="iiii">Point Prespectives</h2>
+ <div class="PM">
+  <button class="left" onclick="bottomthreeVidsPrev()"><span class="glyphicon glyphicon-arrow-left" style="align-self: center; font-size: 40px;"></span></button>
+    <video controls class="bottomthree"><source src="./image/all_pov.mp4" type="video/mp4"></video>
+    <video controls class="bottomthree"><source src="./image/one_pov.mp4" type="video/mp4"></video>
+    <video controls class="bottomthree"><source src="./image/second_one.mp4" type="video/mp4"></video>
+    <video controls class="bottomthree"><source src="./image/two_pov.mp4" type="video/mp4"></video>
+    <img class="bottomthree" src="./image/second_two.jpg">
+    <img class="bottomthree" src="./image/third_two.jpg">
+    <video controls class="bottomthree"><source src="./image/three_pov.mp4" type="video/mp4"></video>
+    <img class="bottomthree" src="./image/second_three.jpg">
+    <video controls class="bottomthree"><source src="./image/four_pov.mp4" type="video/mp4"></video>
+  <button class="right" onclick="bottomthreeVidsNext()"><span class="glyphicon glyphicon-arrow-right" style="align-self: center; font-size: 40px;"></span></button>
+ </div>
+ <footer class="footer"><!--footer-->
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+ <script src="DisplayAndSwitch.js"></script>
+ <script>
+    document.getElementById('themeSwitcher').addEventListener('click', function() {
+        var themeLink = document.getElementById('themeLink');
+        if (themeLink.getAttribute('href') === 'vidsTheme1.css') {
+            themeLink.setAttribute('href', 'vidsTheme2.css');
+        } else {
+            themeLink.setAttribute('href', 'vidsTheme1.css');
+        }
+    });
+</script>
+</body>
+</html>

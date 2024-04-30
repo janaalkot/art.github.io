@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen To</title>
+    <link rel="icon" href="img/logo.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <style>
+        /* تنسيق كلمة Listen To */
+        .header {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            background-color: #8B4513;
+            padding: 15px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 10px;
+        }
+
+        /* تنسيق الكلمات الست */
+        .keywords {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+
+        /* تنسيق مربع حول كل كلمة */
+        .keywords span {
+            border: 1px solid #8B4513;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #8B4513;
+            background-color: white;
+            transition: background-color 0.3s, color 0.3s;
+            cursor: pointer;
+        }
+
+        /* تأثير التحويم */
+        .keywords span:hover {
+            background-color: #8B4513;
+            color: white;
+        }
+
+        /* حاوية الصوت */
+        .audio-container {
+            width: 80%;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        /* نصوص على حاوية الصوت */
+        .text-on-audio {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* النص الأكبر */
+        .text-large {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* النص الأصغر */
+        .text-small {
+            font-size: 14px;
+        }
+
+        /* كلمات الست مع الروابط */
+        .audio-links {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        /* تنسيق الروابط */
+        .audio-links a {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #8B4513;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #8B4513;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* تأثير التحويم */
+        .audio-links a:hover {
+            background-color: #8B4513;
+            color: white;
+        }
+
+        /* المحتوى المعروض */
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+
+        /* تنسيق البطاقات */
+        .card {
+            border: 1px solid #8B4513;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: white;
+            width: 100%;
+            height: 250px;
+            box-sizing: border-box;
+        }
+
+        /* تصميم صور المحتوى */
+        .card img {
+            width: 100%;
+            height: 120px;
+            border-radius: 5px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        /* تصميم النصوص تحت الصور */
+        .card p {
+            color: black;
+            text-align: justify;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* تصميم كلمة Listen More */
+        .card .listen-more {
+            color: #8B4513;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* تصميم كلمة Listen More عند التحويم */
+        .card .listen-more:hover {
+            text-decoration: underline;
+        }
+
+        /* إخفاء المحتوى الإضافي افتراضياً */
+        .more-info {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        :root
+{
+    --grey :#c7ad96;
+    --blue :#3b332b;
+    --darkblue :#3b332b;
+    --darkgrey :#7a5e41;
+    --white : #F5F5F5;
+
+}
+        nav/*top bar*/
+{
+background-color: var(--darkblue);
+color: var(--white);
+padding: 20px 40px;
+position: fixed;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.navTop
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.layers
+{
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    background-color: var(--darkblue);
+    transition: 0.5s ease;
+    transform: translateX(-150%);
+    padding-bottom: 550px; /* Added to create the illusion of 100% height */
+}
+.layers h1
+{
+    color: var(--white);
+    font-weight: 800;
+    text-align: right;
+    padding: 5px 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+.layers ul li
+{
+    list-style: none;
+}
+.layers ul li a
+{
+    color: var(--white);
+    background-color: var(--darkblue);
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    
+}
+.layers ul li a:hover
+{
+    background-color: var(--grey);
+    color: var(--blue);
+}
+.layers ul li a i
+{
+    width: 40px;
+    text-align: center;
+}
+.navItem {
+    position: relative;
+}
+
+
+.toggle {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background-color: var(--white);
+    cursor: pointer;
+    border-radius: 2px;
+    top: 2px;
+    left: 15px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: var(--darkblue);
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--darkblue);
+}
+
+.toggle .middel_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--darkblue);
+}
+
+.toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--darkblue);
+}
+
+.navItem input[type="checkbox"] {
+    display: none;
+}
+.navItem input:checked ~ .toggle .top_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+.navItem input:checked ~ .toggle .bottom_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+.navItem input:checked ~ .toggle .middel_line {
+    opacity: 0;
+    transform: translateX(20px)
+}
+
+.navItem input:checked ~ .layers {
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.find/*search bar*/
+{
+    display: flex;
+    align-items: center;
+    background-color: var(--grey);
+    padding: 7px 20px;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+.searchInput
+{
+    border: none;
+    color: var(--darkblue);
+    background-color: var(--white);
+}
+.navItem button /*log in button*/
+{
+    font-size: 20px;
+    border-bottom: 2px solid  var(--white);
+    cursor: pointer;
+    background-color:transparent;
+    color: var(--white);
+    border-radius: 10%;
+}
+.navBottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.products {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hide the products block by default */
+}
+
+
+.products li a {
+    border: 1px solid ; 
+    margin-top: -1px; 
+    background-color: var(--white);
+    padding: 12px; 
+    text-decoration: none; 
+    font-size: 15px; 
+    color: var(--darkgrey); 
+    display: block; 
+}
+
+.products li a:hover:not(.header) {
+    background-color: var(--grey); 
+}
+.footer
+{
+    background-color: var(--blue);
+    padding: 70px 0;
+}
+.footer-container
+{
+    max-width: 1170px;
+    background-color: var(--blue);
+    margin: auto;
+}
+ul
+{
+    list-style: none;
+}
+.footer-col
+{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col h4
+{
+    font-size: 18px;
+    color: var(--white);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500px;
+    position: relative;
+}
+.footer-col h4 ::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--white);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+.footer-col ul li a
+{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover/*moving transition*/
+{
+    color: var(--grey);
+    padding-left: 10px;
+}
+.footer-col .social-links a/*original */
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--darkgrey);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--white);
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover/*after effect*/
+{
+    color: var(--darkgrey);
+    background-color: var(--white);
+}
+    </style>
+    <nav class="nav_">
+        <div class="navTop">
+            <div class="navItem"><!--menu-->
+                <label for="nav-toggle">
+                    <input type="checkbox" id="nav-toggle">
+                    <div class="toggle">
+                        <span class="top_line common"></span>
+                        <span class="middel_line common"></span>
+                        <span class="bottom_line common"></span>
+                    </div>
+                    <div class="layers">
+                        <h1>Menu</h1>
+                        <ul><!--here to link the pages-->
+                            <li><a href="index.html"><i class="fas fa-solid fa-house"></i>Main</a></li>
+                            <li><a href="amira.html"><i class="fas fa-solid fa-monument"></i>Statues</a></li>
+                            <li><a href="architecture.html"><i class="fas fa-solid fa-vihara"></i>Architecture </a></li>
+                            <li><a href=""><i class="fas fa-solid fa-photo-film"></i>Media</a></li>
+                            <li><a href="museum.html"><i class="fas fa-solid fa-landmark"></i>Museums</a></li>
+                            <li><a href="listento.html"><i class="fas fa-solid fa-headphones"></i> listen to</a></li>
+                            <li><a href="team.html"><i class="fas fa-regular fa-calendar-days"></i>Events</a></li>
+                            <li><a href="LearnToArt.htm"><i class="fas fa-brands fa-leanpub"></i>learn to ART</a></li>
+                            <li><a href="ArtGallery.htm"><i class="fas fa-solid fa-palette"></i>Art Gallery</a></li>
+                            <li><a href="inSell.html"><i class="fas fa-solid fa-cart-arrow-down"></i>in sell</a></li>
+                            <li><a href="JewelleryTheme1.html"><i class="fas fa-solid fa-gem"></i>Jewellery</a></li>
+                            <li><a href="ContactUsTheme1.html"><i class="fas fa-solid fa-address-book"></i>Contact us</a></li>
+                        </ul>
+                    </div>
+                </label>
+            </div>
+            <div class="navItem"><!--logo-->
+                <a href="index.html"><img src="img/logo.png" width ="150" height="100" alt="logo" ></a>
+            </div>
+            <script src="search.js"></script>
+                
+                <div class="navItem"><!--search bar-->
+                    <div class="find">
+                    <input type="text" placeholder="search..." class="searchInput" onkeyup="onKeyUp()">
+                    <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
+                    </div>
+                </div>
+            <div class="navItem"><!--log button-->
+                <a href="log.html"><button class="log" onclick="openLog()">LOG IN</button></a>
+                <button id="themeSwitcher">Switch Theme</button>
+    
+            </div>
+        </div>
+    
+        
+        <!--<div class="navBottom"><!--menu buttons-->
+            <!--<a href="stat.html"><button class="menuItem" id="item1">STATUES</button></a>
+            <a href="#"><button class="menuItem" id="item2">ARCHITECTURE</button></a>
+            <a href="#"><button class="menuItem" id="item3">MUSEUMS</button></a>
+            <a href="#"><button class="menuItem" id="item4">JEWELLERY</button></a>
+            <a href="#"><button class="menuItem" id="item5">PANELS</button></a>
+            <a href="#"><button class="menuItem" id="item6">IN SELL</button></a>
+            <a href="#"><button class="menuItem" id="item7">ABOUT US</button></a>
+        </div>-->
+        <ul class="products"><!--WE NEED TO ADD MOST OF PRODUCTS NAME HERE-->
+            <li><a href="#">ARCHITECTURE</a></li>
+            <li><a href="museum.html">MUSEUMS</a></li>
+            <li><a href="jewellerytheme1.css">JEWELLERY</a></li>
+            <li><a href="#">PANELS</a></li>
+            <li><a href="inSell.html">IN SELL</a></li>
+            <li><a href="ArtGallery.htm">STARE NIGHT</a></li>
+            <li><a href="ArtGallery.htm">MONALISA</a></li>
+            <li><a href="inSell.html">THE JEWELARY OF FAYUM PORTRAIT</a></li>
+            <li><a href="inSell.html">GEORGAIN PASTE NECKLACE</a></li>
+            <li><a href="inSell.html">THE JEWELARY OF FAYUM PORTRAIT</a></li>
+            <li><a href="inSell.html">EGYPTIAN WOMAN WITH EGYPTIAN KERDAN</a></li>
+            <li><a href="inSell.html">BABYLON STATUE</a></li>
+            <li><a href="inSell.html">ANCIENT EGYPTIAN WRITER</a></li>
+            <li><a href="inSell.html">CAIRO'S ISLAMIC ARCHITECTURE – 7TH TO 18TH CENTURIES</a></li>
+            <li><a href="inSell.html">GRAMOPHONE</a></li>
+            <li><a href="inSell.html">EGYPTIAN FARMARS</a></li>
+            <li><a href="inSell.html">GREEK & ROMAN</a></li>
+            <li><a href="amira.html">THE STATUE OF THE AMON-RA</a></li>
+            <li><a href="amira.html">THE STATUE OF THE GRAND PIECE</a></li>
+            <li><a href="amira.html">THE STATUE OF THE WEDJA-REN-ES</a></li>
+            <li><a href="amira.html">HISTORY EGYPTIAN MAAT FEATHER</a></li>
+            <li><a href="amira.html">THE STATUE OF THE PHARAONIC</a></li>
+            <li><a href="amira.html">THE STATUE OF THE TUTANKHAMUN</a></li>
+            <li><a href="museum.html">LOUVRE MUSEUM </a></li>
+            <li><a href="museum.html">UFFIZI GALLERY</a></li>
+            <li><a href="museum.html">ISLAMIC ART MUSEUM </a></li>
+            <li><a href="museum.html">NUBIAN MUSEUM</a></li>
+            <li><a href="museum.html">BORGHESE GALLERY AND MUSEUM</a></li>
+            <li><a href="museum.html">TOKYO NATIONAL MUSEUM</a></li>
+            <li><a href="museum.html">متحف اللوفر</a></li>
+            <li><a href="museum.html">متحف غاليريا أوفيتسي </a></li>
+            <li><a href="museum.html">متحف النوبة</a></li>
+            <li><a href="museum.html">المتحف الإسلامي</a></li>
+            <li><a href="museum.html">متحف بورغيزي</a></li>
+            <li><a href="museum.html">متحف طوكيو</a></li>
+            <li><a href="LearnToArt.htm">HUMAN ANATOMY SECTION</a></li>
+            <li><a href="LearnToArt.htm">ANIMAL ANATOMY SECTION</a></li>
+            <li><a href="LearnToArt.htm">PLANT ANATOMY SECTION</a></li>
+            <li><a href="LearnToArt.htm">POINT PRESPECTIVES</a></li>
+            <li><a href="ArtGallery.htm">THE THE TOWER OF BABEL</a></li>
+            <li><a href="ArtGallery.htm">A SUNDAY ON LA GRANDE JATTE</a></li>
+            <li><a href="ArtGallery.htm">EPISODES FROM THE LIFE OF A BISHOP SAINT</a></li>
+            <li><a href="ArtGallery.htm">WORSHIPPING AMENHOTEP AND AHMOSE-NEFERTARI</a></li>
+            <li><a href="ArtGallery.htm">THE ORANGE SELLER</a></li>
+            <li><a href="ArtGallery.htm">QUEEN NEFERTARI BEING LED BY ISIS</a></li>
+            <li><a href="ArtGallery.htm">THE ANNUNCIATION</a></li>
+            <li><a href="ArtGallery.htm">Madonna Del GranDUCA</a></li>
+            <li><a href="ArtGallery.htm">TWO CROWNS</a></li>
+            <li><a href="ArtGallery.htm">tHE LAST DAY OF POMPEII</a></li>
+            <li><a href="ArtGallery.htm">THE SCREAM</a></li>
+            <li><a href="ArtGallery.htm">UNEQUAL MARRIAGE</a></li>
+        </ul>
+        
+    </nav>
+    <!-- كلمة Listen To -->
+    <div class="header">Listen To</div>
+
+    <!-- الكلمات الست -->
+    <div class="keywords">
+        <span>MUSIC</span>
+        <span>PODCASTS</span>
+        <span>AUDIOBOOKS</span>
+        <span>GENRES</span>
+        <span>ABOUT US</span>
+        <span>ON SALE</span>
+    </div>
+
+    <!-- حاوية الصوت -->
+    <div class="audio-container">
+        <!-- محتوى صوتي -->
+        <audio controls>
+            <source src="https://www.example.com/audio/sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- النصوص على الصوت -->
+        <div class="text-on-audio">
+            <div class="text-large">Listen Now</div>
+            <div class="text-small">Enjoy the best audio content</div>
+        </div>
+    </div>
+
+    <!-- روابط الصوت -->
+    <div class="audio-links">
+        <a href="https://www.example.com/music">Music</a>
+        <a href="https://www.example.com/podcasts">Podcasts</a>
+        <a href="https://www.example.com/audiobooks">Audiobooks</a>
+        <a href="https://www.example.com/genres">Genres</a>
+        <a href="https://www.example.com/about">About Us</a>
+        <a href="https://www.example.com/on-sale">On Sale</a>
+    </div>
+
+    <!-- عرض المحتوى المعروض -->
+    <div class="content">
+        <!-- حاوية لعرض المحتوى المعروض -->
+        <div class="card">
+            <img src="https://www3.0zz0.com/2024/04/30/16/918854313.jpeg" alt="Music Content">
+            <p>
+                استمع إلى أجمل الأغاني والألحان من مختلف أنحاء العالم، بما في ذلك الأغاني العربية والأجنبية.
+                <br>
+                <span class="listen-more" onclick="toggleMoreInfo('info1')">Listen More</span>
+            </p>
+            <!-- المحتوى الإضافي -->
+            <div id="info1" class="more-info">
+                استمتع بمكتبة موسيقية متنوعة تشمل مختلف الأنماط الموسيقية مثل الروك والبوب والجاز وغيرها. اكتشف فنانين جدد واستمع إلى أشهر الألبومات الغنائية.
+            </div>
+        </div>
+
+        <!-- حاوية أخرى لعرض المحتوى المعروض -->
+        <div class="card">
+            <img src="https://www10.0zz0.com/2024/04/30/16/870748292.jpeg" alt="Podcast Content">
+            <p>
+                استمع إلى أفضل البودكاست في مواضيع متنوعة تشمل الأخبار، الترفيه، والتكنولوجيا.
+                <br>
+                <span class="listen-more" onclick="toggleMoreInfo('info2')">Listen More</span>
+            </p>
+            <!-- المحتوى الإضافي -->
+            <div id="info2" class="more-info">
+                استمتع بسلسلة بودكاست حول مواضيع مختلفة مثل العلوم، الأدب، والثقافة. تابع حلقات شيقة وشارك في النقاشات الحية.
+            </div>
+        </div>
+
+        <!-- حاوية ثالثة لعرض المحتوى المعروض -->
+        <div class="card">
+            <img src="https://www3.0zz0.com/2024/04/30/16/787684326.jpeg" alt="Audiobook Content">
+            <p>
+                اكتشف مجموعة واسعة من الكتب الصوتية، بما في ذلك الروايات والكتب العلمية والتاريخية.
+                <br>
+                <span class="listen-more" onclick="toggleMoreInfo('info3')">Listen More</span>
+            </p>
+            <!-- المحتوى الإضافي -->
+            <div id="info3" class="more-info">
+                استمتع بقراءات صوتية لكتب مشهورة وكتابات أدبية عالمية. اختر من بين مجموعة متنوعة من الأعمال الروائية والكتب غير الروائية.
+            </div>
+        </div>
+
+        <!-- حاوية رابعة لعرض المحتوى المعروض -->
+        <div class="card">
+            <img src="https://www9.0zz0.com/2024/04/30/16/386912955.jpeg" alt="Genres Content">
+            <p>
+                اكتشف العديد من الأنواع الموسيقية والأنماط الفنية الأخرى لتناسب جميع الأذواق.
+                <br>
+                <span class="listen-more" onclick="toggleMoreInfo('info4')">Listen More</span>
+            </p>
+            <!-- المحتوى الإضافي -->
+            <div id="info4" class="more-info">
+                اكتشف الموسيقى الكلاسيكية والحديثة والبوب، بالإضافة إلى الأعمال الفنية الرائعة من مختلف الأنواع.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMoreInfo(id) {
+            const infoElement = document.getElementById(id);
+            if (infoElement.style.display === "none") {
+                infoElement.style.display = "block";
+            } else {
+                infoElement.style.display = "none";
+            }
+        }
+    </script>
+    <footer class="footer"><!--footer-->
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-brands fa-twitter"></i></a>
+                        <a href="mailto:someone@example.com"><i class="fab fa-brands fa-instagram"></i></a>
+                        <a href="mailto:someone@example.com"><i class="fab fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

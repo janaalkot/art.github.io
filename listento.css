@@ -1,0 +1,143 @@
+/* تعديل الخلفية لكل الصفحة */
+body {
+    background-color: #f0f0f0;
+}
+
+/* إضافة حدود للبطاقات */
+.card {
+    border: 2px dashed #8B4513;
+}
+
+/* تغيير ألوان الهوامش للعناصر */
+.keywords span {
+    margin: 8px;
+}
+
+/* إضافة ظل للبطاقات */
+.card {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* تعديل لون الروابط */
+.audio-links a {
+    color: #4B0082;
+}
+
+/* تغيير لون التحويم للروابط */
+.audio-links a:hover {
+    color: #FF6347;
+}
+
+/* إضافة حواف دائرية للصورة */
+.card img {
+    border-radius: 15px;
+}
+
+/* تعديل حجم الحروف للنصوص */
+.card p {
+    font-size: 16px;
+}
+
+/* إضافة لون خلفية للنصوص */
+.card p {
+    background-color: #f5f5f5;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* تعديل لون الحدود للنصوص */
+.keywords span {
+    border-color: #4B0082;
+}
+
+/* إضافة تدرج لوني للخلفية */
+body {
+    background: linear-gradient(90deg, #f0f0f0, #e0e0e0);
+}
+
+/* تعديل اللون عند التحويم على الكلمات */
+.keywords span:hover {
+    color: #4B0082;
+}
+
+/* تعديل الهوامش للمحتوى */
+.content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* إضافة حواف للبطاقات */
+.card {
+    border-radius: 15px;
+}
+
+/* تعديل العرض للحاوية الصوتية */
+.audio-container {
+    width: 70%;
+}
+
+/* تعديل لون الحدود للنصوص */
+.card p {
+    border: 1px solid #8B4513;
+}
+
+/* تعديل الهوامش للنصوص */
+.card p {
+    margin: 10px;
+}
+
+/* إضافة ظل للنصوص على الصوت */
+.text-on-audio {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* تعديل الحواف للنصوص على الصوت */
+.text-on-audio {
+    border-radius: 10px;
+}
+
+/* تعديل عرض الهوامش */
+.keywords {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* تعديل الألوان للنصوص */
+.text-large {
+    color: #4B0082;
+}
+
+.text-small {
+    color: #FF6347;
+}
+
+/* إضافة لون للخلفية لكل الكلمات */
+.keywords span {
+    background-color: #e0e0e0;
+}
+
+/* إضافة لون للخلفية لكل البطاقات */
+.card {
+    background-color: #f8f8f8;
+}
+
+/* تعديل التدرج اللوني للخلفية */
+body {
+    background: linear-gradient(45deg, #f0f0f0, #d0d0d0);
+}
+
+/* إضافة خط سفلي عند التحويم على الكلمات */
+.keywords span:hover {
+    text-decoration: underline;
+}
+
+/* تعديل الهوامش للروابط */
+.audio-links {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* تعديل لون التحويم للنصوص */
+.card p:hover {
+    color: #4B0082;
+}
