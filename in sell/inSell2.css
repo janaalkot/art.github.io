@@ -74,7 +74,7 @@ header {
 
 iframe {
     height: 150px;
-    width: 10%;
+    width: 12%;
 }
 
 /*the stars*/
@@ -728,7 +728,7 @@ nav
 
 /*list*/
 .instructions {
-    margin-left: 55%;
+    margin-left: 50%;
     background-color: #ccc;
     height: 50%;
     width: 50%;
