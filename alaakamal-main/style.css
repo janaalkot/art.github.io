@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
@@ -426,64 +427,55 @@ th {
   font-weight: bold;
 }
 
-      .slider {
-        position: relative;
-        width: 100%;
-        margin: auto;
-        overflow: hidden;
-      }
-      
-      .slide,
-      .slide2 {
-        text-align: center;
-        /* Center the images horizontally */
-      }
-      
-      .slide img,
-      .slide2 img {
-        padding: 0 5px;
-        /* Adjust padding as needed */
-        max-width: 30%;
-        /* Reduce maximum width for smaller images */
-        border: 10px outset var(--blue);
-        /* Adjust border style and color */
-      }
-      
-      .slide {
-        display: none;
-        /* Hide all slides initially */
-      }
-      
-      img.displaynextslide {
-        display: block;
-        /* Show the slide with the 'displayslide' class */
-        margin: 0 auto;
-        /* Center the image horizontally */
-      }
-      
-      .slider button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: whitesmoke;
-        color:var(--primary-color);
-        font-size: 1.5rem;
-        /* Reduce button font size for smaller screens */
-        border: none;
-        cursor: pointer;
-        padding: 0 10px;
-        /* Adjust padding as needed */
-      }
-      
-      .slider button.back {
-        right: 0;
-      }
-      
-      .slider button.fow {
-        left: 0;
-      }
-      
-hr{
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides,
+.slides2 {
+  text-align: center;
+}
+
+.slides img,
+.slides2 img {
+  padding: 0 5px;
+  max-width: 30%;
+  border: 10px outset var(--primary-color);
+}
+
+.slide {
+  display: none;
+}
+
+img.displayslide {
+  display: block;
+  margin: 0 auto;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--slider-background-color);
+  color: var(--slider-text-color);
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.slider button.back {
+  right: 0;
+}
+
+.slider button.fow {
+  left: 0;
+}
+
+hr {
   border: 8px solid var(--accent-color);
   width: 50%;
   margin: 10px auto;
@@ -695,6 +687,83 @@ z-index: 100;
 .products li a:hover:not(.header) {
   background-color: var(--darkblue); 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0//font-awesome.min.");
 :root {
@@ -929,3 +998,4 @@ img.nor {
   border-radius: 15px;
   box-shadow: 0px 0px 10px var(--shadow-color);
 }
+
