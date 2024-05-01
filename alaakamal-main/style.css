@@ -647,3 +647,5 @@ z-index: 100;
 .products li a:hover:not(.header) {
   background-color: var(--darkblue);
 }
+
+
