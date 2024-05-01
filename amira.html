@@ -309,6 +309,15 @@ button:link {
       </div>
   </div>
 </footer>
-<script src="script.js"></script>
+<script src="script.js">
+  function changeStyle(){
+var currentStyle= document.getElementById('stylesheet').getAttribute('href');
+if(currentStyle==='mystyle.css'){
+document.getElementById('stylesheet').setAttribute('href','wafaa.css');
+}
+else{
+    document.getElementById('stylesheet').setAttribute('href','mystyle.css');
+}
+</script>
 </body>
 </html>
