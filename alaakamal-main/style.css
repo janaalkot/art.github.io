@@ -357,14 +357,14 @@ th {
   overflow: hidden;
 }
 
-.slides,
-.slides2 {
+.slide,
+.slide2 {
   text-align: center;
   /* Center the images horizontally */
 }
 
-.slides img,
-.slides2 img {
+.slide img,
+.slide2 img {
   padding: 0 5px;
   /* Adjust padding as needed */
   max-width: 30%;
@@ -373,12 +373,12 @@ th {
   /* Adjust border style and color */
 }
 
-.slide {
+.slides {
   display: none;
   /* Hide all slides initially */
 }
 
-img.displayslide {
+img.displaynextslide {
   display: block;
   /* Show the slide with the 'displayslide' class */
   margin: 0 auto;
