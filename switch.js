@@ -1,20 +1,23 @@
-      
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
   // First slider variables and functions
-  const slides = document.querySelectorAll('.slide img');
+  const slides = document.querySelectorAll('.slides img');
   let slideIndex = 0;
   let interval = null;
 
   function initializeSlider() {
-    slides[slideIndex].classList.add("displaynextslide");
+    slides[slideIndex].classList.add("displayslide");
     startAutoplay();
   }
 
   function showSlide(index) {
     if (index >= 0 && index < slides.length) {
-      slides[slideIndex].classList.remove("displaynextslide");
+      slides[slideIndex].classList.remove("displayslide");
       slideIndex = index;
-      slides[slideIndex].classList.add("displaynextslide");
+      slides[slideIndex].classList.add("displayslide");
       resetAutoplay();
     }
   }
@@ -36,20 +39,20 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Second slider variables and functions
-  const slides2 = document.querySelectorAll('.slide2 img');
+  const slides2 = document.querySelectorAll('.slides2 img');
   let slideIndex2 = 0;
   let interval2 = null;
 
   function initializeSlider2() {
-    slides2[slideIndex2].classList.add("displaynextslide");
+    slides2[slideIndex2].classList.add("displayslide");
     startAutoplay2();
   }
 
   function showSlide2(index) {
     if (index >= 0 && index < slides2.length) {
-      slides2[slideIndex2].classList.remove("displaynextslide");
+      slides2[slideIndex2].classList.remove("displayslide");
       slideIndex2 = index;
-      slides2[slideIndex2].classList.add("displaynextslide");
+      slides2[slideIndex2].classList.add("displayslide");
       resetAutoplay2();
     }
   }
@@ -76,4 +79,4 @@ document.addEventListener("DOMContentLoaded", function() {
   // Initialize both sliders
   initializeSlider();
   initializeSlider2();
-});  
+});
