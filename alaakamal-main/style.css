@@ -319,7 +319,7 @@ z-index: 100;
   background-repeat: no-repeat;
 }
 
--container {
+.container {
   width: 390px;
   height: 390px;
   border: 10px solid var(--primary-color);
