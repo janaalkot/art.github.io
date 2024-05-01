@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ART.h!architecture</title>
+  <title>ART.h</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="switch.js"></script>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
@@ -31,12 +31,12 @@
                         <li><a href="index.html"><i class="fas fa-solid fa-house"></i>Main</a></li>
                         <li><a href="amira.html"><i class="fas fa-solid fa-monument"></i>Statues</a></li>
                         <li><a href="architecture.html"><i class="fas fa-solid fa-vihara"></i>Architecture </a></li>
-                        <li><a href="media.html"><i class="fas fa-solid fa-photo-film"></i>Media</a></li>
+                        <li><a href=""><i class="fas fa-solid fa-photo-film"></i>Media</a></li>
                         <li><a href="museum.html"><i class="fas fa-solid fa-landmark"></i>Museums</a></li>
-                        <li><a href="listento.html"><i class="fas fa-solid fa-headphones"></i> listen to</a></li>
+                        <li><a href=""><i class="fas fa-solid fa-headphones"></i> listen to</a></li>
                         <li><a href="team.html"><i class="fas fa-regular fa-calendar-days"></i>Events</a></li>
                         <li><a href="LearnToArt.htm"><i class="fas fa-brands fa-leanpub"></i>learn to ART</a></li>
-                        <li><a href="ArtGallery.htm"><i class="fas fa-solid fa-palette"></i>Paintings</a></li>
+                        <li><a href=""><i class="fas fa-solid fa-palette"></i>Paintings</a></li>
                         <li><a href="inSell.html"><i class="fas fa-solid fa-cart-arrow-down"></i>in sell</a></li>
                         <li><a href="JewelleryTheme1.html"><i class="fas fa-solid fa-gem"></i>Jewellery</a></li>
                         <li><a href="ContactUsTheme1.html"><i class="fas fa-solid fa-address-book"></i>Contact us</a></li>
@@ -45,24 +45,23 @@
             </label>
         </div>
         <div class="navItem"><!--logo-->
-            <a href="index.html"><img src="img/logo.png" width ="150" height="100" alt="logo" ></a>
+            <a href="architecture.html"><img src="C:\Users\dell\Documents\GitHub\project1\alaakamal-main\slides\logo.jpeg" width ="150" height="100" alt="logo" ></a>
         </div>
         <script src="search.js"></script>
             
             <div class="navItem"><!--search bar-->
                 <div class="find">
                 <input type="text" placeholder="search..." class="searchInput" onkeyup="onKeyUp()">
-                <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
+                <img src="C:\Users\dell\Documents\GitHub\project1\alaakamal-main\images2\search (1).png" width="20" height="20" alt="" class="searchIcon">
                 </div>
             </div>
         <div class="navItem"><!--log button-->
             <a href="log.html"><button class="log" onclick="openLog()">LOG IN</button></a>
             <button id="themeSwitcher">Switch Theme</button>
-
+            <button id="theme-toggle">Toggle Theme</button>
         </div>
     </div>
 
-    
     <!--<div class="navBottom"><!--menu buttons-->
         <!--<a href="stat.html"><button class="menuItem" id="item1">STATUES</button></a>
         <a href="#"><button class="menuItem" id="item2">ARCHITECTURE</button></a>
@@ -105,7 +104,7 @@
       <thead>
         <tr>
           <th>Name</th>
-          <th>Dborn</th>
+          <th>born</th>
           <th>Nationality</th>
           <th>Occupation</th>
           <th>Buildings</th>
@@ -139,17 +138,17 @@
     architecture from the Engineer Khanate at Fouad I University, Cairo, in 1926.
   </p>
   <div class="slider">
-    <div class="slide">
-      <img class="slides" src="slides/g1.jpg" alt="Slide 1">
-      <img class="slides" src="slides/g2.jpg" alt="Slide 2">
-      <img class="slides" src="slides/g3.jpg" alt="Slide 3">
-      <img class="slides" src="slides/g4.jpg" alt="Slide 4">
-      <img class="slides" src="slides/g5.jpg" alt="Slide 5">
-      <img class="slides" src="slides/g6.jpg" alt="Slide 6">
-      <img class="slides" src="slides/g7.jpg" alt="Slide 7">
-      <img class="slides" src="slides/g8.jpg" alt="Slide 8">
-      <img class="slides" src="slides/g9.jpg" alt="Slide 9">
-      <img class="slides" src="slides/g10.jpg" alt="Slide 10">
+    <div class="slides">
+      <img class="slide" src="slides/g1.jpg" alt="Slide 1">
+      <img class="slide" src="slides/g2.jpg" alt="Slide 2">
+      <img class="slide" src="slides/g3.jpg" alt="Slide 3">
+      <img class="slide" src="slides/g4.jpg" alt="Slide 4">
+      <img class="slide" src="slides/g5.jpg" alt="Slide 5">
+      <img class="slide" src="slides/g6.jpg" alt="Slide 6">
+      <img class="slide" src="slides/g7.jpg" alt="Slide 7">
+      <img class="slide" src="slides/g8.jpg" alt="Slide 8">
+      <img class="slide" src="slides/g9.jpg" alt="Slide 9">
+      <img class="slide" src="slides/g10.jpg" alt="Slide 10">
     </div>
     <button class="back" onclick="prevSlide()">
       <i class="fa fa-arrow-left" style="font-size: 30px;"></i>
@@ -187,18 +186,17 @@
     </table>
   </div>
   <div class="slider">
-    <div class="slide2">
-      <img class="slides" src="images2/m2.jfif" alt="Slide 1">
-      <img class="slides" src="images2/m3.jfif" alt="Slide 2">
-      <img class="slides" src="images2/m4.jfif" alt="Slide 3">
-      <img class="slides" src="images2/m4.jfif" alt="Slide 4">
-      <img class="slides" src="images2/m5.jfif" alt="Slide 5">
-      <img class="slides" src="images2/m6.jfif" alt="Slide 6">
-      <img class="slides" src="images2/m7.jfif" alt="Slide 7">
+    <div class="slides2">
+      <img class="slide" src="images2/m2.jfif" alt="Slide 1">
+      <img class="slide" src="images2/m3.jfif" alt="Slide 2">
+      <img class="slide" src="images2/m4.jfif" alt="Slide 3">
+      <img class="slide" src="images2/m4.jfif" alt="Slide 4">
+      <img class="slide" src="images2/m5.jfif" alt="Slide 5">
+      <img class="slide" src="images2/m6.jfif" alt="Slide 6">
+      <img class="slide" src="images2/m7.jfif" alt="Slide 7">
     </div>
-   
-    <iframe class="frame"src="/default.asp" width="100%" height="300" style="border:1px solid black;">
-    </iframe>
+
+    
     <button class="back" onclick="prevSlide2()">
       <i class="fa fa-arrow-left" style="font-size: 30px;"></i>
     </button>
@@ -206,6 +204,7 @@
       <i class="fa fa-arrow-right" style="font-size: 30px;"></i>
     </button>
   </div>
+ 
   <div class="line">
     <hr>
   </div>
@@ -221,6 +220,14 @@
     student of the University of Cairo, and later worked as a civil engineer. He was also a He obtained a diploma in
     architecture from the Engineer Khanate at Fouad I University, Cairo, in 1926.
   </p>
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+const root = document.documentElement;
+
+themeToggleBtn.addEventListener('click', () => {
+  root.classList.toggle('dark-theme');
+});
+  </script>
   <style>
     .footer
 {
@@ -336,7 +343,9 @@ ul
         </div>
     </div>
 </footer>
+
+
 </body>
 
 </html>
-</html>
+
