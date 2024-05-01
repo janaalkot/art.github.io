@@ -1,20 +1,20 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   // First slider variables and functions
-  const slides = document.querySelectorAll('.slides img');
+  const slides = document.querySelectorAll('.slide img');
   let slideIndex = 0;
   let interval = null;
 
   function initializeSlider() {
-    slides[slideIndex].classList.add("displayslide");
+    slides[slideIndex].classList.add("displaynextslide");
     startAutoplay();
   }
 
   function showSlide(index) {
     if (index >= 0 && index < slides.length) {
-      slides[slideIndex].classList.remove("displayslide");
+      slides[slideIndex].classList.remove("displaynextslide");
       slideIndex = index;
-      slides[slideIndex].classList.add("displayslide");
+      slides[slideIndex].classList.add("displaynextslide");
       resetAutoplay();
     }
   }
