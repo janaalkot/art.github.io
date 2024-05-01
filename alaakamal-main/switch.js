@@ -36,20 +36,20 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Second slider variables and functions
-  const slides2 = document.querySelectorAll('.slides2 img');
+  const slides2 = document.querySelectorAll('.slide2 img');
   let slideIndex2 = 0;
   let interval2 = null;
 
   function initializeSlider2() {
-    slides2[slideIndex2].classList.add("displayslide");
+    slides2[slideIndex2].classList.add("displaynextslide");
     startAutoplay2();
   }
 
   function showSlide2(index) {
     if (index >= 0 && index < slides2.length) {
-      slides2[slideIndex2].classList.remove("displayslide");
+      slides2[slideIndex2].classList.remove("displaynextslide");
       slideIndex2 = index;
-      slides2[slideIndex2].classList.add("displayslide");
+      slides2[slideIndex2].classList.add("displaynextslide");
       resetAutoplay2();
     }
   }
