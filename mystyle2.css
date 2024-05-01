@@ -233,7 +233,7 @@ z-index: 100;
     color: var(--white);
     background-color: var(--darkblue);
     text-decoration: none;
-    padding: 10px 0;
+    padding: 9px 0;
     display: block;
     text-transform: capitalize;
     transition: all 0.3s ease;
