@@ -6,15 +6,62 @@
   padding: 0px;
   font-family: "poppins", sans-serif;
 }
-:root
-{
-    --grey :#c7ad96;
-    --blue :#3b332b;
-    --darkblue :#3b332b;
-    --darkgrey :#7a5e41;
-    --white : #F5F5F5;
 
+:root {
+  --grey: #e2e8f5;
+  --blue: #0d4683;
+  --darkblue: #13448a;
+  --darkgrey: #aebbcc;
+  --white: #F5F5F5;
+  --orange: #e04204;
+  
+  --primary-color: #8dccee; /* Bright blue */
+  --secondary-color: #082038; /* Darker blue */
+  --tertiary-color: #020917; /* Even darker blue */
+  --quaternary-color: #1d0303; /* Light grey */
+  --quinary-color: #130101; /* White */
+  --background-color: #020b16; /* Light blue background */
+  --border-color: #a5c0e6; /* Border color */
+  --shadow-color: rgba(0, 170, 255, 0.1); /* Blue shadow */
+  --highlight-color: #160116; /* Magenta highlight */
+  --accent-color: #cccccc; /* Light grey accent */
+  --slider-background-color: #bfc6c9; /* Light blue background for slider */
+  --slider-text-color: #9db4f4; /* Dark blue text color for slider */
+  --hr-color: #d2daf1; /* Dark blue color for horizontal rule */
+  --text-color: #010110; /* Blue text color */
+  --text-background-color: #140202; /* Light grey background for text */
+  --font-primary: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-secondary: 'Arial', sans-serif;
+  --font-size-base: 16px;
+  --font-size-large: 24px;
+  --background-image: url("C:\Users\dell\Documents\GitHub\project1\alaakamal-main\images2\download (4).jfif");
 }
+
+.dark-theme {
+  --grey: #c7ad96;
+  --blue: #3b332b;
+  --darkblue: #3b332b;
+  --darkgrey: #7a5e41;
+  --white: #F5F5F5;
+  --orange: #c9ad82;
+
+  --primary-color: #c9ad82;
+  --secondary-color: #c0a572;
+  --tertiary-color: #392401;
+  --quaternary-color: #181716;
+  --quinary-color: #333;
+  --background-color: #ffffff;
+  --border-color: #341818;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --highlight-color: #150d02;
+  --accent-color: #c5a66d;
+  --slider-background-color: whitesmoke;
+  --slider-text-color: wheat;
+  --hr-color: wheat;
+  --text-color: #080000;
+  --text-background-color: #edebe8;
+}
+
 /* Add this CSS to your style.css file */
 /* Remove blue color and underline from all links */
 a {
@@ -240,6 +287,7 @@ z-index: 100;
   background-color: var(--grey); 
 }
 
+
 .main {
   width: 100%;
   height: 100vh;
@@ -271,12 +319,12 @@ z-index: 100;
   padding: 20px;
   font-size: 30px;
   font-family: 10px;
-  border: solid 27px #c0a572;
+  border: solid 27px var(--grey);
   justify-content: center;
   display: flex;
   align-items: center;
   color: black;
-  background-color: #c9ad82;
+  background-color:var(--border-color);
 }
 
 .head {
@@ -297,10 +345,17 @@ z-index: 100;
   padding: 30px;
   align-items: center;
 
-}
-
-img.hassan {
-  background-image: 300px #c9ad82;
+}img.hassan {
+  /* Replace 'your-image-url.jpg' with the actual URL of your image */
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image within the element */
+  background-color: #ffffff; /* Background color (white) */
+  width: 300px; /* Width of the element */
+  height: auto; /* Automatically adjust height based on image aspect ratio */
+  border: 8px solid var(--grey); /* Adds a black border around the image */
+  border-radius:15px; /* Adds rounded corners to the image */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+  /* Additional styles as needed */
 }
 
 .h3 {
@@ -309,16 +364,21 @@ img.hassan {
   font-size-adjust: 5px;
 }
 
-.para2,
-.para3 {
-  padding: 30px;
-  font-size: 20px;
-  font-weight: 10px;
-  line-height: 1.5;
-  margin-bottom: 15px;
-  /* Add some padding for extra space */
+.para2 {
+  font-family: Arial, sans-serif; /* Choose a readable font */
+  font-size:4000px; /* Adjust the font size as needed */
+  line-height: 1.5; /* Adjust the line height for better readability */
+  color: #333; /* Set the text color */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
 }
 
+.para2::first-letter {
+  font-size: 1.5em; /* Increase the font size of the first letter for emphasis */
+  font-weight: bold; /* Make the first letter bold */
+  color: #150d02; /* Set a different color for the first letter */
+}
+
+  /* Add some padding for extra space */
 .container {
   display: flex;
   /* Enable flexbox layout for side-by-side arrangement */
@@ -326,7 +386,7 @@ img.hassan {
   /* Vertically align image and table */
   margin: 25px 0px;
   /* Adjust vertical margin as needed */
-  max-width: 700px;
+  max-width: 1200px; /* Adjusted max-width */
   height: auto;
 }
 
@@ -334,21 +394,24 @@ img.hassan {
   border-collapse: collapse;
   margin: 0 10px;
   /* Add some margin between image and table */
-  border: 1px solid #c5a66d;
-  border-radius: 5px;
+  border: 1px solid var(--accent-color);
+  border-radius: 100000px;
+  width: 2000px; /* Adjusted width */
+  height: 300px;
 }
 
 th,
 td {
-  border: 1px solid #341818;
+  border: 1px solid var(--background-color);
   padding: 5px;
   text-align: left;
 }
 
 th {
-  background-color: #c9ad82;
+  background-color:var(--accent-color);
   font-weight: bold;
 }
+
 
 .slider {
   position: relative;
@@ -369,11 +432,11 @@ th {
   /* Adjust padding as needed */
   max-width: 30%;
   /* Reduce maximum width for smaller images */
-  border: 20px outset #c9ad82;
+  border: 10px outset var(--blue);
   /* Adjust border style and color */
 }
 
-.slides {
+.slide {
   display: none;
   /* Hide all slides initially */
 }
@@ -390,7 +453,7 @@ img.displaynextslide {
   top: 50%;
   transform: translateY(-50%);
   background-color: whitesmoke;
-  color: wheat;
+  color:var(--primary-color);
   font-size: 1.5rem;
   /* Reduce button font size for smaller screens */
   border: none;
@@ -408,7 +471,7 @@ img.displaynextslide {
 }
 
 hr {
-  border: 8px solid wheat;
+  border: 8px solid var(--darkgrey);
   /* Change color and thickness as desired */
 }
 
@@ -437,6 +500,19 @@ hr {
   font-style: bold;
 }
 
+img.nor{
+    /* Replace 'your-image-url.jpg' with the actual URL of your image */
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image within the element */
+    background-color: #080000; /* Background color (white) */
+    width: 300px; /* Width of the element */
+    height: auto; /* Automatically adjust height based on image aspect ratio */
+    border: 8px solid var(--border-color); /* Adds a black border around the image */
+    border-radius:15px; /* Adds rounded corners to the image */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+    /* Additional styles as needed */
+
+}
 
 
 
@@ -444,10 +520,11 @@ hr {
 /* Styles for the slider container */
 
 hr {
-  border: 8px solid wheat;
+  border: 8px solid var(--darkgrey);
   /* Change color and thickness as desired */
   width: 50%;
   /* Adjust width as needed */
   margin: 10px auto;
   /* Add margin for spacing */
 }
+
