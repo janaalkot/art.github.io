@@ -7,7 +7,7 @@
   <title>ART.h</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="script.js"></script>
+  <script src="switch.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
@@ -220,14 +220,7 @@
     student of the University of Cairo, and later worked as a civil engineer. He was also a He obtained a diploma in
     architecture from the Engineer Khanate at Fouad I University, Cairo, in 1926.
   </p>
-  <script>
-    const themeToggleBtn = document.getElementById('theme-toggle');
-const root = document.documentElement;
 
-themeToggleBtn.addEventListener('click', () => {
-  root.classList.toggle('dark-theme');
-});
-  </script>
   <style>
     .footer
 {
@@ -343,7 +336,14 @@ ul
         </div>
     </div>
 </footer>
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+const root = document.documentElement;
 
+themeToggleBtn.addEventListener('click', () => {
+  root.classList.toggle('dark-theme');
+});
+  </script>
 
 </body>
 
