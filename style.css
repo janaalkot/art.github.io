@@ -243,6 +243,7 @@ img.hassan {
   height: 300px;
   font-family: var(--font-primary);
   background-color: var(--head);
+  padding-left:15px;
 }
 
 
