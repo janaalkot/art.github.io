@@ -244,6 +244,8 @@ img.hassan {
   font-family: var(--font-primary);
   background-color: var(--head);
   padding-left:15px;
+   padding-right:15px;
+  
 }
 
 
