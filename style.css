@@ -131,7 +131,7 @@ body {
   /* Height of the image */
   border: 10px solid var(--primrycolor);
   /* Border style */
- 
+   background-image: url("images2/back/30241987569.png");
   background-position: center;
   background-size: cover;
   /* Cover the entire background */
