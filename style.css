@@ -131,7 +131,7 @@ body {
   /* Height of the image */
   border: 10px solid var(--primrycolor);
   /* Border style */
-  background-image: url("images2/back/30241987569.png");
+ 
   background-position: center;
   background-size: cover;
   /* Cover the entire background */
@@ -139,15 +139,7 @@ body {
 }
 
 
-.container {
-  width: 390px;
-  height: 390px;
-  border: 10px solid var(--primary-color);
- 
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 
 
 .para {
@@ -242,7 +234,7 @@ img.hassan {
   width: 2000px;
   height: 300px;
   font-family: var(--font-primary);
-  background-color: var(--head);
+  background-color:var(accent-color);
   padding-left:15px;
    padding-right:15px;
   
